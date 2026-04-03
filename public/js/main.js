@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '.highlight-card', '.ai-category-card',
         '.mentorship-card', '.publication-card', '.speaking-item',
         '.cert-card', '.education-item', '.language-card',
-        '.hobby-card', '.contact-interest-item'
+        '.hobby-card', '.contact-interest-item', '.podcast-episode-card'
     ].join(', ');
 
     document.querySelectorAll(animatedSelectors).forEach(el => {

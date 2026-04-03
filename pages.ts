@@ -165,6 +165,9 @@ export function homePage(basePath = '', useHtmlExt = false): string {
                     </div>
                 `).join('')}
             </div>
+            <div class="section-cta">
+                <p class="podcast-callout">Also co-hosting <a href="${l('/publications')}"><strong>${bioData.podcast.name}</strong></a> — a Portuguese-language podcast interviewing AI/ML specialists about the real impact of AI.</p>
+            </div>
         </div>
     </section>
 
@@ -416,6 +419,36 @@ export function publicationsPage(basePath = '', useHtmlExt = false): string {
                                 <span class="date">${speak.year}</span>
                             </div>
                             <p>${speak.description}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <div class="podcast-section">
+                <h2>Podcast</h2>
+                <div class="podcast-intro">
+                    <h3>${bioData.podcast.name} <span class="podcast-lang">// ${bioData.podcast.language}</span></h3>
+                    <p>${bioData.podcast.description}</p>
+                    <p class="podcast-cohost">Co-hosted with ${bioData.podcast.cohost}</p>
+                    <div class="podcast-platforms">
+                        <a href="${bioData.podcast.links.spotify}" target="_blank" class="btn btn-small">Spotify</a>
+                        <a href="${bioData.podcast.links.youtube}" target="_blank" class="btn btn-small">YouTube</a>
+                    </div>
+                </div>
+                <div class="podcast-episodes">
+                    ${bioData.podcast.episodes.map(ep => `
+                        <div class="podcast-episode-card">
+                            <div class="podcast-episode-header">
+                                <div>
+                                    <h4>${ep.title}</h4>
+                                    <p class="podcast-guest">${ep.guest} — ${ep.guestRole}</p>
+                                </div>
+                                <div class="podcast-episode-meta">
+                                    <span class="date">${formatDate(ep.date)}</span>
+                                    <span class="podcast-duration">${ep.duration}</span>
+                                </div>
+                            </div>
+                            <p>${ep.description}</p>
                         </div>
                     `).join('')}
                 </div>

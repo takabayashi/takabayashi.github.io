@@ -798,5 +798,43 @@
       "period": "2018-2022",
       "description": "Guided startup teams on technology choices, scalable architecture, and AI/ML product development"
     }
-  ]
+  ],
+  "podcast": {
+    "name": "Act4AI",
+    "subtitle": "Desbravando a Revolução da Inteligência Artificial",
+    "description": "A Portuguese-language podcast where we interview AI/ML specialists, PhDs, and industry leaders about the real impact of artificial intelligence on software development and careers.",
+    "cohost": "Danilo Favoratti",
+    "language": "Portuguese (Brazil)",
+    "links": {
+      "spotify": "https://open.spotify.com/show/1dzfVTfxncohhVx15Rhsfk",
+      "youtube": "https://www.youtube.com/@act4ai",
+      "website": "https://act4.ai"
+    },
+    "episodes": [
+      {
+        "title": "Machine Learning, Open Source e Startups: A Jornada de André Natal",
+        "guest": "André Natal",
+        "guestRole": "ML Engineer, 20+ years (Mozilla, Silicon Valley)",
+        "date": "2025-02",
+        "duration": "1h 31m",
+        "description": "Career journey from Brazil to Silicon Valley, AI, NLP, open source, and market impact"
+      },
+      {
+        "title": "Superando Limites com IA: A Jornada de Alexandre na Microsoft",
+        "guest": "Alexandre",
+        "guestRole": "Solutions Architect, Microsoft",
+        "date": "2024-11",
+        "duration": "1h 21m",
+        "description": "GitHub Copilot, accessibility, how AI transformed his personal and professional life"
+      },
+      {
+        "title": "Desvendando a caixa-preta da Inteligência Artificial",
+        "guest": "Erick Maziero",
+        "guestRole": "PhD, ML Engineer specializing in NLP",
+        "date": "2024-08",
+        "duration": "1h 28m",
+        "description": "Large language models, ChatGPT, generative AI, and AI hallucinations"
+      }
+    ]
+  }
 }
