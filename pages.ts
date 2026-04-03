@@ -124,7 +124,7 @@ export function homePage(basePath = '', useHtmlExt = false): string {
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">2</span>
-                        <span class="stat-label">Startup Exits</span>
+                        <span class="stat-label">Startups Founded</span>
                     </div>
                 </div>
             </div>
@@ -176,7 +176,7 @@ export function homePage(basePath = '', useHtmlExt = false): string {
             <h2>Technical Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3>Languages</h3>
                     <ul>
                         ${bioData.skills.languages.map(skill => `<li>${skill}</li>`).join('')}
                     </ul>
@@ -190,24 +190,23 @@ export function homePage(basePath = '', useHtmlExt = false): string {
                 <div class="skill-category">
                     <h3>Data & Streaming</h3>
                     <ul>
-                        ${bioData.skills.data.slice(0, 10).map(skill => `<li>${skill}</li>`).join('')}
+                        ${bioData.skills.data.map(skill => `<li>${skill}</li>`).join('')}
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Cloud & Architecture</h3>
+                    <h3>Cloud & DevOps</h3>
                     <ul>
-                        ${bioData.skills.architectures.slice(0, 8).map(skill => `<li>${skill}</li>`).join('')}
+                        ${bioData.skills.cloud.map(skill => `<li>${skill}</li>`).join('')}
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>MLOps & Infrastructure</h3>
+                    <h3>Architecture</h3>
                     <ul>
-                        ${bioData.skills.mlops.map(skill => `<li>${skill}</li>`).join('')}
-                        ${bioData.skills.infrastructure.map(skill => `<li>${skill}</li>`).join('')}
+                        ${bioData.skills.architecture.map(skill => `<li>${skill}</li>`).join('')}
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Leadership & Practices</h3>
+                    <h3>Leadership</h3>
                     <ul>
                         ${bioData.skills.leadership.map(skill => `<li>${skill}</li>`).join('')}
                     </ul>
