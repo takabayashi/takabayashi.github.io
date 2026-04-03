@@ -28,7 +28,7 @@ const pages: Record<string, string> = {
   'projects.html': projectsPage(BASE_PATH, true),
   'publications.html': publicationsPage(BASE_PATH, true),
   'certifications.html': certificationsPage(BASE_PATH, true),
-  'contact.html': contactPage(BASE_PATH, true, true), // staticMode = true
+  'contact.html': contactPage(BASE_PATH, true),
 };
 
 for (const [filename, html] of Object.entries(pages)) {

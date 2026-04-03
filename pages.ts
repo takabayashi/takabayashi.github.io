@@ -118,7 +118,7 @@ export function homePage(basePath = '', useHtmlExt = false): string {
                         <span class="stat-label">Enterprise Clients</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">13</span>
+                        <span class="stat-number">17</span>
                         <span class="stat-label">Certifications</span>
                     </div>
                     <div class="stat-item">
@@ -483,33 +483,7 @@ export function certificationsPage(basePath = '', useHtmlExt = false): string {
   return layout('Certifications', content, 'certifications', basePath, useHtmlExt);
 }
 
-export function contactPage(basePath = '', useHtmlExt = false, staticMode = false): string {
-  const contactFormHtml = staticMode ? `
-                <div class="contact-form">
-                    <h2>Send a Message</h2>
-                    <p class="static-contact-note">Use the email or social links to get in touch, or send a message directly:</p>
-                    <a href="mailto:${bioData.email}?subject=Hello%20from%20your%20website" class="btn btn-primary" style="margin-bottom: 1rem; display: inline-block;">Email Me</a>
-                    <p class="static-contact-note" style="margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem;">You can also reach me on <a href="https://linkedin.com/in/${bioData.social.linkedin}" target="_blank" style="color: var(--primary-color);">LinkedIn</a> or <a href="https://github.com/${bioData.social.github}" target="_blank" style="color: var(--primary-color);">GitHub</a>.</p>
-                </div>` : `
-                <div class="contact-form">
-                    <h2>Send a Message</h2>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                    <div id="formMessage" class="form-message"></div>
-                </div>`;
+export function contactPage(basePath = '', useHtmlExt = false): string {
 
   const content = `
     <section class="page-header">
@@ -566,8 +540,6 @@ export function contactPage(basePath = '', useHtmlExt = false, staticMode = fals
                         </ul>
                     </div>
                 </div>
-
-                ${contactFormHtml}
             </div>
         </div>
     </section>`;
