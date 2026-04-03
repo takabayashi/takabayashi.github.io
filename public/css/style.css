@@ -79,7 +79,6 @@ h1, h2, h3, h4,
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    overflow-x: hidden;
 }
 
 /* Navigation */
@@ -1713,7 +1712,6 @@ footer {
     color: var(--text-primary);
     padding: 2rem 0;
     margin-top: 0;
-    overflow: hidden;
 }
 
 .footer-content {
