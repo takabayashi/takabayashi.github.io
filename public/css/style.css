@@ -994,6 +994,15 @@ h2::after {
     font-size: 0.9rem;
 }
 
+.subsection-title {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 /* Languages Compact (Contact) */
 .languages-compact {
     margin-top: 2rem;

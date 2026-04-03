@@ -317,6 +317,17 @@ export function experiencePage(basePath = '', useHtmlExt = false): string {
                         </div>
                     `).join('')}
                 </div>
+
+                <h3 class="subsection-title">Mentorship</h3>
+                <div class="mentorship-grid">
+                    ${bioData.mentorship.map(m => `
+                        <div class="mentorship-card">
+                            <h4>${m.organization}</h4>
+                            <p class="mentorship-role">${m.role} (${m.period})</p>
+                            <p>${m.description}</p>
+                        </div>
+                    `).join('')}
+                </div>
             </div>
         </div>
     </section>`;
