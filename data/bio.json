@@ -3,7 +3,7 @@
   "nickname": "Taka",
   "title": "Solutions Engineer / AI Architect",
   "tagline": "Event-Driven AI & Multi-Agent Systems for the Enterprise",
-  "about": "I build the bridge between AI and production-scale streaming systems. At Confluent, I architect AI-powered streaming pipelines for 50+ enterprise customers and serve as the AI Subject Matter Expert, working on multi-agent systems, MCP integrations, and Flink-based inference architectures that have supported over $15M in deals.\n\nBefore that, I co-founded two startups (Boolabs, acquired by B2W Digital in 2016, and Dr. Opinion), led engineering at Overjet where we cut AI inference latency by 20x, and created Marvin AI, the first Brazilian project incubated by the Apache Foundation. It won PwC's Innovation Value Award in 2018.\n\nPublished researcher, international conference speaker, and BJJ practitioner. I genuinely believe the best AI systems are event-driven, and I'm still building.",
+  "about": "I build the bridge between AI and production-scale streaming systems.\n\nAt Confluent, I architect AI-powered streaming pipelines for 50+ enterprise customers and serve as the AI Subject Matter Expert, working on multi-agent systems, MCP integrations, and Flink-based inference architectures that have supported over $15M in deals.\n\nBefore that, I co-founded two startups — Boolabs, acquired by B2W Digital in 2016, and Dr. Opinion — led engineering at Overjet where we cut AI inference latency by 20x, and created Marvin AI, the first Brazilian project incubated by the Apache Foundation. Marvin won PwC's Innovation Value Award in the Retail category in 2018.\n\nPublished researcher, international conference speaker, and BJJ practitioner. I genuinely believe the best AI systems are event-driven, and I'm still building.",
   "email": "daniel@act4.ai",
   "phone": "",
   "location": "Austin, TX",
@@ -204,103 +204,61 @@
   "skills": {
     "languages": [
       "Python",
-      "JavaScript",
-      "TypeScript",
       "Java",
-      "C",
-      "C++",
+      "JavaScript / TypeScript",
       "SQL",
-      "Ruby",
-      "Scala"
+      "Scala",
+      "C / C++"
     ],
-    "platforms": [
-      "NodeJS",
-      "Django",
-      "Flask",
-      "FastAPI",
-      "Bun"
-    ],
-    "architectures": [
-      "Google Cloud Platform (GCP)",
-      "Amazon Web Services (AWS)",
-      "Microsoft Azure",
-      "Distributed Systems",
-      "Data Pipelines",
-      "Event-Driven Architecture",
-      "Big Data",
-      "ML Pipelines",
-      "Streaming",
-      "REST API",
-      "WebSocket",
-      "gRPC",
-      "Microservices"
-    ],
-    "infrastructure": [
-      "Kubernetes",
-      "CI/CD",
-      "Terraform",
-      "New Relic",
-      "Docker",
-      "GPU Computing"
-    ],
-    "mlops": [
-      "Databricks MLFlow",
-      "Kubeflow",
-      "Ray Serve",
-      "LangChain",
-      "LLM",
-      "PyTorch",
-      "TensorFlow",
-      "Caffe"
+    "ai": [
+      "GenAI / LLMs",
+      "Multi-Agent Systems (MAS)",
+      "RAG",
+      "Agentic Workflows",
+      "MCP (Model Context Protocol)",
+      "A2A (Agent-to-Agent)",
+      "Deep Learning",
+      "Computer Vision",
+      "NLP",
+      "CrewAI / LangChain / AutoGen",
+      "PyTorch / TensorFlow"
     ],
     "data": [
       "Apache Kafka",
       "Apache Flink",
       "Apache Spark",
-      "DataFlow",
-      "Pub/Sub",
-      "DynamoDB",
-      "MongoDB",
-      "VectorDB",
-      "Cassandra",
       "PostgreSQL",
-      "S3",
-      "GCS",
+      "MongoDB",
+      "DynamoDB / Cassandra",
       "Elasticsearch",
       "Redis",
-      "Looker",
-      "BigQuery",
-      "HBase",
-      "Celery"
+      "VectorDB",
+      "BigQuery / Looker"
     ],
-    "ai": [
-      "Traditional ML",
-      "Deep Learning",
-      "Computer Vision",
-      "NLP",
-      "GenAI",
-      "CrewAI",
-      "LangChain",
-      "AutoGen",
-      "RAG",
-      "Multi-Agent Systems (MAS)",
-      "MCP (Model Context Protocol)",
-      "A2A",
-      "Agentic Workflows",
-      "Anomaly Detection",
-      "Sentiment Analysis",
-      "Image Recognition"
+    "cloud": [
+      "AWS",
+      "GCP",
+      "Azure",
+      "Kubernetes / Docker",
+      "Terraform",
+      "CI/CD",
+      "GPU Computing",
+      "MLFlow / Kubeflow / Ray Serve"
+    ],
+    "architecture": [
+      "Event-Driven Architecture",
+      "Distributed Systems",
+      "Microservices",
+      "Data & ML Pipelines",
+      "Streaming",
+      "REST / gRPC / WebSocket"
     ],
     "leadership": [
-      "Agile Leader",
-      "Sprint Planning",
-      "Mentoring",
-      "Feedback",
-      "System Design",
-      "Technical Strategy",
-      "Team Building",
+      "System Design & Technical Strategy",
+      "Team Building & Mentoring",
+      "Agile / Sprint Planning",
       "Cross-functional Collaboration",
-      "Startup Leadership"
+      "Startup Leadership (2x Co-Founder)"
     ]
   },
   "projects": [
@@ -324,8 +282,8 @@
         "Apache Foundation incubator project, the first from Brazil",
         "PwC Innovation Value Award winner (2018), Retail category",
         "Speaker at Apache conferences, QCon, PAPIs, SEI Saturn",
-        "~364 combined GitHub stars across Marvin ecosystem, 33 forks, 585 commits",
-        "Published paper: 'Marvin — From Exploratory Models to Production' (PAPIs 2017)"
+        "~413 combined GitHub stars across Marvin ecosystem, 33 forks, 585 commits",
+        "Published paper: 'Marvin — Open Source Artificial Intelligence Platform' (PAPIs 2017)"
       ]
     },
     {
@@ -358,24 +316,45 @@
     {
       "id": 3,
       "name": "Dental Fraud Detection Platform",
-      "company": "Dr. Opinion & Overjet",
-      "description": "First-of-its-kind fraud detection platform for dental insurance industry, processing terabytes of dental images using AI to identify fraud patterns. Built from scratch across two companies.",
+      "company": "Dr. Opinion",
+      "description": "First-of-its-kind fraud detection platform for the dental insurance industry, processing terabytes of dental images using AI to identify fraud patterns. Built from zero to production.",
       "technologies": [
         "Python",
         "Computer Vision",
         "Deep Learning",
-        "Kubernetes",
-        "GKE",
         "Big Data"
       ],
       "githubUrl": "",
       "liveUrl": "",
       "highlights": [
-        "MVP built from scratch in one quarter at Overjet",
-        "Identified ~0.5% fraud rate in first release at Dr. Opinion",
-        "Processed millions of images daily",
-        "20x improvement in RTA latency, 6x cost reduction",
-        "Enabled corrective and educational actions for dental payers"
+        "Built from scratch (zero to one) as co-founder",
+        "Identified ~0.5% fraud rate in its first release",
+        "Processed terabytes of dental images using AI",
+        "Enabled dental payers to take corrective and educational actions",
+        "Globally distributed team across USA, Brazil, and Philippines"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Dental AI Inference Platform",
+      "company": "Overjet",
+      "description": "Scaled and optimized Overjet's dental AI inference pipeline, drastically improving latency and reducing infrastructure costs. Also conceptualized and built an innovative fraud detection MVP in one quarter.",
+      "technologies": [
+        "Python",
+        "Deep Learning",
+        "Kubernetes",
+        "GKE",
+        "MLOps",
+        "Computer Vision"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "highlights": [
+        "Improved RTA latency of AI inference pipeline by ~20x",
+        "Reduced unit costs by ~6x through ML component rewrites and K8s optimization",
+        "Processed millions of images daily across hundreds of production services",
+        "Built fraud detection MVP (first of its kind) in one quarter",
+        "Achieved 99.9% platform uptime with 90% reduction in incidents"
       ]
     },
     {
@@ -550,10 +529,10 @@
   "publications": [
     {
       "id": 1,
-      "title": "Marvin — From Exploratory Models to Production",
+      "title": "Marvin — Open Source Artificial Intelligence Platform",
       "venue": "PAPIs.io (Predictive APIs and Apps)",
       "date": "2017-10",
-      "authors": "Daniel Takabayashi et al.",
+      "authors": "Lucas B. Miguel, Daniel Takabayashi et al.",
       "description": "Presents the Marvin AI platform's approach to simplifying ML application development. Covers the path from exploratory data science models to production-ready systems.",
       "url": "https://raw.githubusercontent.com/marvin-ai/marvin-paper/master/from-exploratory-models-to-productions/marvin_paper.pdf",
       "type": "Conference Paper"
@@ -585,7 +564,7 @@
       "eventUrl": "https://thedevconf.com",
       "topic": "The Future of AI is Event-Driven: Building Reactive and Scalable Multi-Agent Systems",
       "year": "2025",
-      "description": "Keynote on event-driven AI architectures, multi-agent systems on Apache Flink, and the convergence of streaming data with GenAI"
+      "description": "Talk on event-driven AI architectures, multi-agent systems on Apache Flink, and the convergence of streaming data with GenAI"
     },
     {
       "event": "Austin Python Meetup",
@@ -774,11 +753,11 @@
   },
   "achievements": [
     "Supported $15M+ in enterprise deals as Solutions Engineer and AI SME at Confluent",
-    "Co-founded Boolabs and successfully exited via acquisition by B2W Digital (2016)",
+    "Co-founded two startups: Boolabs (acquired by B2W Digital, 2016) and Dr. Opinion",
     "Created Marvin AI, the first Brazilian open-source project incubated by Apache Foundation",
     "Received 'The Innovation Value Award' from PwC as most innovative project in Retail category (2018)",
     "Improved AI inference pipeline latency by 20x and reduced ML costs by 6x at Overjet",
-    "Published 3 peer-reviewed papers in computer vision, NLP, and ML platforms",
+    "Co-authored 3 research papers in computer vision, NLP, and ML platforms",
     "International speaker at 7+ major conferences including Apache, QCon, PAPIs, SEI Saturn, and TDC",
     "Hold 17 professional certifications from Confluent, Oracle, IBM, and Sun Microsystems",
     "20+ years in software engineering, ML, and technical leadership",
