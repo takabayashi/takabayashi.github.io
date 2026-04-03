@@ -579,7 +579,7 @@ export function contactPage(basePath = '', useHtmlExt = false): string {
                         <h3>I speak</h3>
                         <ul>
                             ${Object.entries(bioData.spokenLanguages).map(([lang, level]) => `
-                                <li><strong>${lang}</strong> — ${level}</li>
+                                <li><strong>${lang}</strong>: ${level}</li>
                             `).join('')}
                         </ul>
                     </div>
