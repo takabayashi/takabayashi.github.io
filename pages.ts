@@ -59,6 +59,10 @@ export function layout(title: string, content: string, activeTab: string, basePa
                 <div class="footer-info">
                     <p>&copy; ${new Date().getFullYear()} ${bioData.name}. All rights reserved.</p>
                     <p class="footer-tagline">${bioData.tagline}</p>
+                    <div class="footer-badges">
+                        <a href="https://github.com/takabayashi/takabayashi.github.io/actions/workflows/deploy.yml" target="_blank"><img src="https://github.com/takabayashi/takabayashi.github.io/actions/workflows/deploy.yml/badge.svg" alt="Deploy Status"></a>
+                        <a href="https://github.com/takabayashi/takabayashi.github.io/releases" target="_blank"><img src="https://img.shields.io/github/v/release/takabayashi/takabayashi.github.io?color=00ff41" alt="Latest Release"></a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <div class="social-links">

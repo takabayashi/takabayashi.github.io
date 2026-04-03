@@ -1,113 +1,54 @@
 # Daniel Takabayashi - Bio/Resume Website
 
-A modern, dynamic bio/resume website built with Bun and TypeScript.
+[![Deploy to GitHub Pages](https://github.com/takabayashi/takabayashi.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/takabayashi/takabayashi.github.io/actions/workflows/deploy.yml)
+[![Release](https://github.com/takabayashi/takabayashi.github.io/actions/workflows/release.yml/badge.svg)](https://github.com/takabayashi/takabayashi.github.io/actions/workflows/release.yml)
+[![GitHub release](https://img.shields.io/github/v/release/takabayashi/takabayashi.github.io?color=00ff41)](https://github.com/takabayashi/takabayashi.github.io/releases)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Ftakabayashi.github.io&label=takabayashi.github.io&color=00ff41)](https://takabayashi.github.io)
+[![Built with Bun](https://img.shields.io/badge/built%20with-Bun-f9f1e1?logo=bun)](https://bun.sh)
+
+A modern bio/resume website built with Bun and TypeScript, deployed as a static site on GitHub Pages.
 
 ## Features
 
-- 🚀 **Fast & Modern**: Built with Bun's native server (no external frameworks)
-- 📱 **Responsive Design**: Works perfectly on mobile, tablet, and desktop
-- 🎨 **Beautiful UI**: Clean, professional design with gradient accents
-- 🔄 **Dynamic Content**: All content loaded from JSON data file
-- 📊 **Multiple Pages**: Home, Experience, Projects, and Contact pages
-- 📮 **Contact Form**: Functional contact form with API endpoint
-- ⚡ **Hot Reload**: Development mode with automatic reloading
-- 🎯 **Type Safe**: Full TypeScript support
+- **Fast & Modern**: Built with Bun's native server (no external frameworks)
+- **Responsive Design**: Works perfectly on mobile, tablet, and desktop
+- **Beautiful UI**: Dark cyberpunk theme with neon green accents
+- **Data-Driven**: All content loaded from a single JSON file
+- **Multiple Pages**: Home, Experience, Projects, Publications, Certifications, and Contact
+- **Auto-Deploy**: Pushes to `main` trigger automatic builds and deploys
+- **Auto-Release**: Tag with `vX.Y.Z` to create a GitHub Release
 
-## Project Structure
-
-```
-bio_site/
-├── index.ts              # Main server file with routes
-├── data/
-│   └── bio.json          # All bio/resume data
-├── public/
-│   ├── css/
-│   │   └── style.css     # Styling
-│   ├── js/
-│   │   └── main.js       # Client-side JavaScript
-│   └── images/           # Image assets
-├── package.json
-└── README.md
-```
-
-## Getting Started
-
-### Prerequisites
-
-- [Bun](https://bun.sh) installed on your system
-
-### Installation
+## Quick Start
 
 ```bash
-# Install dependencies
 bun install
+bun run dev        # Dev server with hot reload at http://localhost:3000
+bun run build      # Generate static site in dist/
 ```
 
-### Development
+## Customizing
 
-Run the development server with hot reload:
+Edit `data/bio.json` to update all content (experience, projects, skills, etc.).
+
+## Releases
+
+Create a release by tagging a commit:
 
 ```bash
-bun run dev
+git tag v1.0.0
+git push origin v1.0.0
 ```
 
-Or simply:
+This automatically creates a GitHub Release with auto-generated release notes.
 
-```bash
-bun --hot index.ts
-```
-
-The server will start at `http://localhost:3000`
-
-### Production
-
-Run the production server:
-
-```bash
-bun start
-```
-
-## Customizing Your Bio
-
-Edit the `data/bio.json` file to update your personal information:
-
-- **Personal Info**: Name, title, tagline, contact details
-- **Social Links**: GitHub, LinkedIn, Twitter profiles
-- **Experience**: Work history with achievements
-- **Education**: Academic background
-- **Skills**: Technical skills, frameworks, tools
-- **Projects**: Portfolio projects with links
-- **Certifications**: Professional certifications
-
-## API Endpoints
-
-The website provides several API endpoints:
-
-- `GET /api/bio` - Full bio data
-- `GET /api/experience` - Work experience
-- `GET /api/projects` - Projects
-- `GET /api/skills` - Skills
-- `POST /api/contact` - Contact form submission
-
-## Pages
-
-- **Home** (`/`) - Hero section, about, skills overview
-- **Experience** (`/experience`) - Work history, education, certifications
-- **Projects** (`/projects`) - Portfolio projects
-- **Contact** (`/contact`) - Contact information and form
-
-## Technologies Used
+## Technologies
 
 - **Runtime**: Bun
 - **Language**: TypeScript
-- **Server**: Bun.serve() (native)
 - **Styling**: Pure CSS with CSS Variables
-- **Client-side**: Vanilla JavaScript
-
-## License
-
-Private project for personal use.
+- **CI/CD**: GitHub Actions
+- **Hosting**: GitHub Pages
 
 ---
 
-Built with [Bun](https://bun.sh) 🥟
+Built with [Bun](https://bun.sh)
