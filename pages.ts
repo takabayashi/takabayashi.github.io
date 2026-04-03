@@ -22,8 +22,8 @@ export function layout(title: string, content: string, activeTab: string, basePa
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title} - ${bioData.name}</title>
-    <meta name="description" content="${bioData.tagline}. ${bioData.title} with 20+ years of experience in AI, ML, and distributed systems.">
-    <meta name="keywords" content="Daniel Takabayashi, AI Architect, Solutions Engineer, Confluent, Apache Marvin, Machine Learning, Data Streaming">
+    <meta name="description" content="AI Architect building event-driven GenAI and multi-agent systems for Fortune 500 enterprises. Confluent Staff SE, Apache Marvin creator, 20+ years in AI/ML and distributed systems.">
+    <meta name="keywords" content="Daniel Takabayashi, AI Architect, Solutions Engineer, Confluent, Apache Marvin, Machine Learning, Data Streaming, GenAI, Multi-Agent Systems, Event-Driven AI, MCP, RAG, Agentic Workflows, Apache Kafka, Apache Flink">
     <meta property="og:title" content="${title} - ${bioData.name}">
     <meta property="og:description" content="${bioData.tagline}">
     <meta property="og:type" content="website">
@@ -73,6 +73,8 @@ export function layout(title: string, content: string, activeTab: string, basePa
                         <a href="${l('/')}">Home</a>
                         <a href="${l('/experience')}">Experience</a>
                         <a href="${l('/projects')}">Projects</a>
+                        <a href="${l('/publications')}">Publications</a>
+                        <a href="${l('/certifications')}">Certifications</a>
                         <a href="${l('/contact')}">Contact</a>
                     </div>
                 </div>
@@ -103,27 +105,26 @@ export function homePage(basePath = '', useHtmlExt = false): string {
                         <span class="hero-languages">${Object.keys(bioData.spokenLanguages).join(' / ')}</span>
                     </div>
                     <div class="hero-buttons">
-                        <a href="${l('/contact')}" class="btn btn-primary">Get in Touch</a>
+                        <a href="${l('/contact')}" class="btn btn-primary">Let's Talk</a>
                         <a href="${l('/projects')}" class="btn btn-secondary">View Projects</a>
-                        <a href="${l('/experience')}" class="btn btn-secondary">Experience</a>
                     </div>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-number">20+</span>
-                        <span class="stat-label">Years Experience</span>
+                        <span class="stat-label">Years in Engineering</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">$15M+</span>
+                        <span class="stat-label">Deals Supported</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">50+</span>
-                        <span class="stat-label">Enterprise Clients</span>
+                        <span class="stat-label">Enterprise Customers</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">17</span>
-                        <span class="stat-label">Certifications</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Publications</span>
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Startup Exits</span>
                     </div>
                 </div>
             </div>
@@ -133,7 +134,7 @@ export function homePage(basePath = '', useHtmlExt = false): string {
     <section class="about-section">
         <div class="container">
             <h2>About Me</h2>
-            <p>${bioData.about}</p>
+            ${bioData.about.split('\n\n').map(p => `<p>${p}</p>`).join('')}
         </div>
     </section>
 
@@ -141,7 +142,7 @@ export function homePage(basePath = '', useHtmlExt = false): string {
         <div class="container">
             <h2>Career Highlights</h2>
             <div class="highlights-grid">
-                ${bioData.achievements.slice(0, 6).map(achievement => `
+                ${bioData.achievements.slice(0, 4).map(achievement => `
                     <div class="highlight-card">
                         <p>${achievement}</p>
                     </div>
@@ -163,6 +164,9 @@ export function homePage(basePath = '', useHtmlExt = false): string {
                         </ul>
                     </div>
                 `).join('')}
+            </div>
+            <div class="section-cta">
+                <p class="podcast-callout">Also co-hosting <a href="${l('/publications')}"><strong>${bioData.podcast.name}</strong></a> — a Portuguese-language podcast interviewing AI/ML specialists about the real impact of AI.</p>
             </div>
         </div>
     </section>
@@ -212,32 +216,13 @@ export function homePage(basePath = '', useHtmlExt = false): string {
         </div>
     </section>
 
-    <section class="speaking-section">
-        <div class="container">
-            <h2>Speaking & Community</h2>
-            <div class="speaking-grid">
-                ${bioData.speaking.slice(0, 4).map(speak => `
-                    <div class="speaking-card">
-                        <span class="speaking-year">${speak.year}</span>
-                        <h3>${speak.event}</h3>
-                        <p class="speaking-topic">${speak.topic}</p>
-                        <p>${speak.description}</p>
-                    </div>
-                `).join('')}
-            </div>
-            <div class="section-cta">
-                <a href="${l('/publications')}" class="btn btn-secondary">View All Speaking & Publications</a>
-            </div>
-        </div>
-    </section>
-
     <section class="mentorship-section">
         <div class="container">
             <h2>Mentorship & Volunteering</h2>
             <div class="mentorship-grid">
                 ${bioData.mentorship.map(m => `
                     <div class="mentorship-card">
-                        <h3>${m.organization}</h3>
+                        <h3>${m.organizationUrl ? `<a href="${m.organizationUrl}" target="_blank" class="institution-link">${m.organization}</a>` : m.organization}</h3>
                         <p class="mentorship-role">${m.role} (${m.period})</p>
                         <p>${m.description}</p>
                     </div>
@@ -266,7 +251,7 @@ export function experiencePage(basePath = '', useHtmlExt = false): string {
                         <div class="experience-header">
                             <div>
                                 <h3>${exp.position}</h3>
-                                <h4>${exp.company} <span class="company-desc">// ${exp.companyDescription}</span></h4>
+                                <h4>${exp.companyUrl ? `<a href="${exp.companyUrl}" target="_blank" class="company-link">${exp.company}</a>` : exp.company} <span class="company-desc">// ${exp.companyDescription}</span></h4>
                             </div>
                             <div class="experience-meta">
                                 <span class="date">${formatDate(exp.startDate)} - ${formatDate(exp.endDate)}</span>
@@ -286,7 +271,7 @@ export function experiencePage(basePath = '', useHtmlExt = false): string {
                 ${bioData.education.map(edu => `
                     <div class="education-item">
                         <h3>${edu.degree} in ${edu.field}${edu.credits ? ` (${edu.credits})` : ''}</h3>
-                        <h4>${edu.institution}${edu.location ? ' // ' + edu.location : ''}</h4>
+                        <h4>${edu.institutionUrl ? `<a href="${edu.institutionUrl}" target="_blank" class="company-link">${edu.institution}</a>` : edu.institution}${edu.location ? ' // ' + edu.location : ''}</h4>
                         <span class="date">${formatDate(edu.startDate)} - ${formatDate(edu.endDate)}</span>
                         ${edu.achievements && edu.achievements.length > 0 ? `
                             <ul>
@@ -332,6 +317,17 @@ export function experiencePage(basePath = '', useHtmlExt = false): string {
                         <div class="hobby-card">
                             <h4>${hobby.name}</h4>
                             <p>${hobby.description}</p>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <h3 class="subsection-title">Mentorship</h3>
+                <div class="mentorship-grid">
+                    ${bioData.mentorship.map(m => `
+                        <div class="mentorship-card">
+                            <h4>${m.organizationUrl ? `<a href="${m.organizationUrl}" target="_blank" class="institution-link">${m.organization}</a>` : m.organization}</h4>
+                            <p class="mentorship-role">${m.role} (${m.period})</p>
+                            <p>${m.description}</p>
                         </div>
                     `).join('')}
                 </div>
@@ -417,7 +413,7 @@ export function publicationsPage(basePath = '', useHtmlExt = false): string {
                         <div class="speaking-item">
                             <div class="speaking-header">
                                 <div>
-                                    <h3>${speak.event}</h3>
+                                    <h3>${speak.eventUrl ? `<a href="${speak.eventUrl}" target="_blank" class="institution-link">${speak.event}</a>` : speak.event}</h3>
                                     <p class="speaking-topic">"${speak.topic}"</p>
                                 </div>
                                 <span class="date">${speak.year}</span>
@@ -433,9 +429,40 @@ export function publicationsPage(basePath = '', useHtmlExt = false): string {
                 <div class="mentorship-grid">
                     ${bioData.mentorship.map(m => `
                         <div class="mentorship-card">
-                            <h3>${m.organization}</h3>
+                            <h3>${m.organizationUrl ? `<a href="${m.organizationUrl}" target="_blank" class="institution-link">${m.organization}</a>` : m.organization}</h3>
                             <p class="mentorship-role">${m.role} (${m.period})</p>
                             <p>${m.description}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <div class="podcast-section">
+                <h2>Podcast</h2>
+                <div class="podcast-intro">
+                    <h3>${bioData.podcast.name} <span class="podcast-lang">// ${bioData.podcast.language}</span></h3>
+                    <p>${bioData.podcast.description}</p>
+                    <p class="podcast-cohost">Co-hosted with ${bioData.podcast.cohost}</p>
+                    <div class="podcast-platforms">
+                        <a href="${bioData.podcast.links.spotify}" target="_blank" class="btn btn-small">Spotify</a>
+                        <a href="${bioData.podcast.links.youtube}" target="_blank" class="btn btn-small">YouTube</a>
+                    </div>
+                </div>
+                <div class="podcast-episodes">
+                    ${bioData.podcast.episodes.map(ep => `
+                        <div class="podcast-episode-card">
+                            <div class="podcast-episode-header">
+                                <div>
+                                    <h4>${ep.title}</h4>
+                                    <p class="podcast-guest">${ep.guest} — ${ep.guestRole}</p>
+                                </div>
+                                <div class="podcast-episode-meta">
+                                    <span class="date">${formatDate(ep.date)}</span>
+                                    <span class="podcast-duration">${ep.duration}</span>
+                                </div>
+                            </div>
+                            <p>${ep.description}</p>
+                            ${ep.url ? `<a href="${ep.url}" target="_blank" class="btn btn-small">Listen on Spotify</a>` : ''}
                         </div>
                     `).join('')}
                 </div>
@@ -457,7 +484,7 @@ export function certificationsPage(basePath = '', useHtmlExt = false): string {
     <section class="page-header">
         <div class="container">
             <h1>Certifications</h1>
-            <p>13 professional certifications from Oracle, IBM, and Sun Microsystems</p>
+            <p>Professional certifications spanning data streaming, enterprise architecture, and cloud platforms</p>
         </div>
     </section>
 
@@ -488,8 +515,8 @@ export function contactPage(basePath = '', useHtmlExt = false): string {
   const content = `
     <section class="page-header">
         <div class="container">
-            <h1>Get in Touch</h1>
-            <p>Open to collaborations, speaking opportunities, and connecting with fellow technologists</p>
+            <h1>Let's Connect</h1>
+            <p>Always happy to talk about AI architecture, streaming systems, or the next big thing</p>
         </div>
     </section>
 
@@ -497,42 +524,59 @@ export function contactPage(basePath = '', useHtmlExt = false): string {
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h2>Contact Information</h2>
+                    <h2>What I'm Open To</h2>
+                    <div class="contact-interests">
+                        <div class="contact-interest-item">
+                            <h4>Enterprise AI & Streaming</h4>
+                            <p>Architecture consulting, PoCs, and technical strategy for event-driven AI systems</p>
+                        </div>
+                        <div class="contact-interest-item">
+                            <h4>Speaking & Conferences</h4>
+                            <p>Talks on multi-agent systems, streaming AI, and lessons from building ML platforms at scale</p>
+                        </div>
+                        <div class="contact-interest-item">
+                            <h4>Mentorship</h4>
+                            <p>Guiding founders and engineering leaders on AI product development and team building</p>
+                        </div>
+                        <div class="contact-interest-item">
+                            <h4>Open Source & Community</h4>
+                            <p>Collaborations on AI tooling, MCP servers, and developer education</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-details">
+                    <h2>Reach Out</h2>
+                    <p class="contact-note">I typically respond within 24 hours. LinkedIn is usually the fastest way to reach me.</p>
                     <div class="contact-items">
                         <div class="contact-item">
                             <strong>Email</strong>
-                            <a href="mailto:${bioData.email}">${bioData.email}</a>
+                            <a href="mailto:${bioData.email}?subject=Hey%20Taka">${bioData.email}</a>
                         </div>
                         <div class="contact-item">
                             <strong>Location</strong>
                             <span>${bioData.location}</span>
                         </div>
-                        ${bioData.website ? `
-                        <div class="contact-item">
-                            <strong>Website</strong>
-                            <a href="${bioData.website}" target="_blank">${bioData.website}</a>
-                        </div>
-                        ` : ''}
                     </div>
 
                     <div class="social-section">
-                        <h3>Connect with me</h3>
+                        <h3>Find Me Online</h3>
                         <div class="social-grid">
-                            ${bioData.social.github ? `
-                            <a href="https://github.com/${bioData.social.github}" target="_blank" class="social-link">
-                                <span>GitHub</span>
-                            </a>
-                            ` : ''}
                             ${bioData.social.linkedin ? `
                             <a href="https://linkedin.com/in/${bioData.social.linkedin}" target="_blank" class="social-link">
                                 <span>LinkedIn</span>
+                            </a>
+                            ` : ''}
+                            ${bioData.social.github ? `
+                            <a href="https://github.com/${bioData.social.github}" target="_blank" class="social-link">
+                                <span>GitHub</span>
                             </a>
                             ` : ''}
                         </div>
                     </div>
 
                     <div class="languages-compact">
-                        <h3>Languages</h3>
+                        <h3>I speak</h3>
                         <ul>
                             ${Object.entries(bioData.spokenLanguages).map(([lang, level]) => `
                                 <li><strong>${lang}</strong> — ${level}</li>

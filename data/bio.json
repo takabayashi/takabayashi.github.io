@@ -2,8 +2,8 @@
   "name": "Daniel Takabayashi",
   "nickname": "Taka",
   "title": "Solutions Engineer / AI Architect",
-  "tagline": "Architecting Enterprise AI & Streaming Solutions at Scale",
-  "about": "Solutions Engineer and AI Architect with 20+ years of hands-on experience spanning software development, data science, machine learning, and engineering leadership. Currently architecting end-to-end streaming solutions for 50+ enterprise customers at Confluent, where I serve as the AI Subject Matter Expert driving multi-agent systems, MCP integrations, and Flink-based AI architectures. Former Director of Engineering at Overjet (Series C dental AI), Co-founder of Boolabs (acquired by B2W Digital in 2016), and creator of Marvin AI — the first Brazilian open-source project incubated by the Apache Foundation, which received 'The Innovation Value Award' from PwC in 2018. Founder of the Data+AI Monthly Internal Meetup at Confluent, international conference speaker, published researcher in computer vision and NLP, and a Brazilian Jiu-Jitsu practitioner who applies discipline, resilience, and calm problem-solving to technical leadership.",
+  "tagline": "Event-Driven AI & Multi-Agent Systems for the Enterprise",
+  "about": "I build the bridge between cutting-edge AI and production-scale streaming systems. At Confluent, I architect AI-powered streaming pipelines for 50+ enterprise customers and serve as the AI Subject Matter Expert — driving multi-agent systems, MCP integrations, and Flink-based inference architectures that have supported over $15M in deals.\n\nBefore that, I co-founded two startups (Boolabs, acquired by B2W Digital in 2016, and Dr. Opinion), led engineering at Overjet where we cut AI inference latency by 20x, and created Marvin AI — the first Brazilian project incubated by the Apache Foundation, which won PwC's Innovation Value Award in 2018.\n\nPublished researcher, international conference speaker, and BJJ practitioner. I genuinely believe the best AI systems are event-driven — and I'm still building.",
   "email": "daniel@act4.ai",
   "phone": "",
   "location": "Austin, TX",
@@ -37,6 +37,7 @@
     {
       "id": 1,
       "company": "Confluent",
+      "companyUrl": "https://www.confluent.io",
       "companyDescription": "The Leading Data Streaming Platform",
       "position": "Staff Solutions Engineer (AI SME)",
       "location": "Austin, TX",
@@ -45,7 +46,7 @@
       "current": true,
       "description": "Architecting enterprise streaming solutions and leading AI/ML initiatives for major customers across AWS, GCP, and Azure. Serving as the AI Subject Matter Expert driving multi-agent systems, MCP integrations, and Flink-based AI architectures.",
       "achievements": [
-        "Architected end-to-end streaming solutions for 50+ enterprise customers, reducing ingestion latency and costs",
+        "Architected end-to-end streaming solutions for 50+ enterprise customers across AWS, GCP, and Azure, driving measurable improvements in ingestion latency and infrastructure costs",
         "Supported deals totaling over $15M+ in the past year as SE and AI SME",
         "Led AI/ML proof-of-concepts including anomaly detection, agentic workflows, MCP Servers, and A2A integrations",
         "Founded and host the Data+AI Monthly Internal Meetup — a recurring series fostering cross-functional knowledge sharing on GenAI, multi-agent frameworks, and streaming AI architectures",
@@ -60,6 +61,7 @@
     {
       "id": 2,
       "company": "Overjet.ai",
+      "companyUrl": "https://www.overjet.com",
       "companyDescription": "Series C Startup, Dental AI",
       "position": "Director of Engineering",
       "location": "Boston, MA",
@@ -71,8 +73,8 @@
         "Managed multiple engineering teams (15+ people) with direct and indirect reports; mentoring, performance reviews, and strategic collaboration with peers at director level and senior leadership",
         "Improved RTA latency of AI inference pipeline by ~20x, enhancing user engagement on the online platform",
         "Drastically reduced unit costs (~6x) by rewriting ML components and optimizing K8s Clusters (GKE) utilization",
-        "Reduced new customer onboarding time from weeks to hours by redesigning core insurance product component",
-        "Enhanced reliability and implemented full observability (SRE), resulting in 90% reduction in incidents",
+        "Redesigned core insurance product component, cutting new customer onboarding from 6+ weeks to hours",
+        "Implemented full observability stack (SRE), reducing production incidents by 90% and achieving 99.9% platform uptime",
         "Implemented release process, full CI/CD automation, and observability strategy enabling 4 MLOps engineers to manage hundreds of production services processing millions of images daily",
         "Conceptualized, designed, and built MVP for innovative fraud detection platform (first of its kind) within one quarter, unlocking go-to-market strategies and revenue opportunities"
       ]
@@ -80,22 +82,24 @@
     {
       "id": 3,
       "company": "PwC Labs",
+      "companyUrl": "https://www.pwc.com",
       "companyDescription": "PricewaterhouseCoopers Innovation Labs",
       "position": "Software Engineering Manager",
       "location": "San Francisco, CA",
       "startDate": "2021-03",
       "endDate": "2022-01",
       "current": false,
-      "description": "Managed globally distributed team designing and building Data & ML pipeline blueprints for PwC Labs legal domain projects.",
+      "description": "Led globally distributed R&D team building reusable ML pipeline architectures for PwC's legal tech AI practice.",
       "achievements": [
-        "Managed team of 5 engineers distributed across Argentina, India, and USA",
-        "Designed and built blueprint for Data & ML pipelines used by PwC Labs projects in the legal domain",
-        "Reduced time/complexity for ML Scientists to prototype OCR-based solutions by creating Python SDK encapsulating ABBYY FineReader Engine SDK API (available only in C++)"
+        "Led team of 5 engineers across Argentina, India, and USA building reusable Data & ML pipeline blueprints for PwC Labs' legal domain projects",
+        "Created Python SDK wrapping ABBYY FineReader Engine (C++ only), enabling ML scientists to prototype OCR solutions at 5x faster speed",
+        "Architecture validated and adopted across 10+ legal domain projects before broader enterprise rollout"
       ]
     },
     {
       "id": 4,
       "company": "Dr. Opinion",
+      "companyUrl": "https://www.crunchbase.com/organization/dr-opinion",
       "companyDescription": "Seed Startup, Dental AI",
       "position": "Principal Engineer | Co-Founder",
       "location": "San Francisco, CA",
@@ -105,14 +109,14 @@
       "description": "Zero-to-one development of scalable fraud detection platform for the dental insurance industry, processing terabytes of dental images using AI.",
       "achievements": [
         "Hired, managed, and grew globally distributed team of over 12 highly skilled engineers (USA, Brazil, Philippines)",
-        "Utilized AI and data processing to process terabytes of dental images, identifying ~0.5% fraud in first release",
-        "Enabled dental payers to take corrective and educational actions through AI-powered fraud detection",
-        "Built scalable platform from concept to production deployment"
+        "Built AI pipeline processing terabytes of dental images, identifying 0.5% fraud rate in first production release — enabling insurers to recover costs and take corrective action",
+        "Designed scalable platform architecture from zero to production serving dental payers across the US"
       ]
     },
     {
       "id": 5,
       "company": "B2W Digital",
+      "companyUrl": "https://www.americanas.com.br",
       "companyDescription": "Leading E-Commerce in LATAM",
       "position": "Software Engineering Manager",
       "location": "Sao Paulo, Brazil",
@@ -131,7 +135,8 @@
     {
       "id": 6,
       "company": "Boolabs",
-      "companyDescription": "Acquired by B2W Digital (2016)",
+      "companyUrl": "https://www.americanas.com.br",
+      "companyDescription": "Acquired by B2W Digital (2016) — LATAM's largest e-commerce platform",
       "position": "Principal Engineer | Co-Founder",
       "location": "Sao Paulo, Brazil",
       "startDate": "2013-10",
@@ -151,6 +156,7 @@
     {
       "id": 1,
       "institution": "FIA (Fundacao Instituto de Administracao)",
+      "institutionUrl": "https://fia.com.br",
       "degree": "MBA",
       "field": "Marketing Intelligence",
       "location": "Brazil",
@@ -166,6 +172,7 @@
     {
       "id": 2,
       "institution": "IPT (Instituto de Pesquisas Tecnologicas)",
+      "institutionUrl": "https://www.ipt.br",
       "degree": "M.S.",
       "field": "Software Engineering",
       "location": "Brazil",
@@ -181,6 +188,7 @@
     {
       "id": 3,
       "institution": "USCS (Universidade Municipal de Sao Caetano do Sul)",
+      "institutionUrl": "https://www.uscs.edu.br",
       "degree": "B.S.",
       "field": "Computer Science",
       "location": "Brazil",
@@ -207,11 +215,10 @@
     ],
     "platforms": [
       "NodeJS",
-      "MARN",
-      "Rails",
       "Django",
       "Flask",
-      "Play Framework"
+      "FastAPI",
+      "Bun"
     ],
     "architectures": [
       "Google Cloud Platform (GCP)",
@@ -223,7 +230,6 @@
       "Big Data",
       "ML Pipelines",
       "Streaming",
-      "Akka Actors",
       "REST API",
       "WebSocket",
       "gRPC",
@@ -318,7 +324,7 @@
         "Apache Foundation incubator project — first Brazilian project accepted",
         "PwC Innovation Value Award winner (2018) — Retail category",
         "Speaker at Apache conferences, QCon, PAPIs, SEI Saturn",
-        "99 GitHub stars, 33 forks, 585 commits",
+        "~364 combined GitHub stars across Marvin ecosystem, 33 forks, 585 commits",
         "Published paper: 'Marvin — From Exploratory Models to Production' (PAPIs 2017)"
       ]
     },
@@ -576,42 +582,49 @@
   "speaking": [
     {
       "event": "TDC — The Developer's Conference Brazil",
+      "eventUrl": "https://thedevconf.com",
       "topic": "The Future of AI is Event-Driven: Building Reactive and Scalable Multi-Agent Systems",
       "year": "2025",
       "description": "Keynote on event-driven AI architectures, multi-agent systems on Apache Flink, and the convergence of streaming data with GenAI"
     },
     {
       "event": "Austin Python Meetup",
+      "eventUrl": "https://www.meetup.com/austinpython/",
       "topic": "MCP 101 — Model Context Protocol for Agentic AI",
       "year": "2025",
       "description": "Hands-on demo of MCP server implementation with Trello integration, evangelizing event-driven agent patterns to the Python community"
     },
     {
       "event": "Confluent Internal Enablement — AI in Action",
+      "eventUrl": "",
       "topic": "AI in Action: From Rules-Based to Reasoning-Based AI",
       "year": "2025",
       "description": "Internal enablement session covering the evolution of AI, real-world applications, and implications for Solutions Engineering"
     },
     {
       "event": "Apache Conferences",
+      "eventUrl": "https://www.apache.org",
       "topic": "Marvin AI — Apache Incubator Project",
       "year": "2017-2018",
       "description": "Presented on the Marvin AI platform architecture, open-source ML tooling, and lessons from Apache Foundation incubation"
     },
     {
       "event": "QCon",
+      "eventUrl": "https://qconferences.com",
       "topic": "Machine Learning Platforms at Scale",
       "year": "2017-2018",
       "description": "International presentation on scalable ML platform architecture and production-grade ML systems"
     },
     {
       "event": "PAPIs (Predictive APIs)",
+      "eventUrl": "https://www.papis.io",
       "topic": "From Exploratory Models to Production",
       "year": "2017",
       "description": "Paper presentation on Marvin AI platform and deploying ML models at scale in production environments"
     },
     {
       "event": "SEI Saturn Conference",
+      "eventUrl": "https://www.sei.cmu.edu",
       "topic": "Software Architecture for ML Systems",
       "year": "2017-2018",
       "description": "Presented on architectural patterns for machine learning systems, quality attributes, and scalable ML infrastructure"
@@ -785,21 +798,65 @@
   "mentorship": [
     {
       "organization": "Confluent AI Startup Accelerator",
+      "organizationUrl": "https://www.confluent.io",
       "role": "Mentor",
       "period": "2024-Present",
       "description": "Provided in-depth mentorship to technical founders, guiding them on leveraging Confluent AI products, developing scalable event-driven AI architectures, and implementing best practices for real-world streaming AI solutions."
     },
     {
       "organization": "Founder Institute",
+      "organizationUrl": "https://fi.co",
       "role": "Mentor",
       "period": "2019-2021",
       "description": "Mentored early-stage startup founders on technical strategy, product development, and engineering team building"
     },
     {
       "organization": "Cotidiano Startup Accelerator",
+      "organizationUrl": "",
       "role": "Mentor",
       "period": "2018-2022",
       "description": "Guided startup teams on technology choices, scalable architecture, and AI/ML product development"
     }
-  ]
+  ],
+  "podcast": {
+    "name": "Act4AI",
+    "subtitle": "Desbravando a Revolução da Inteligência Artificial",
+    "description": "A Portuguese-language podcast where we interview AI/ML specialists, PhDs, and industry leaders about the real impact of artificial intelligence on software development and careers.",
+    "cohost": "Danilo Favoratti",
+    "language": "Portuguese (Brazil)",
+    "links": {
+      "spotify": "https://open.spotify.com/show/1dzfVTfxncohhVx15Rhsfk",
+      "youtube": "https://www.youtube.com/@act4ai",
+      "website": "https://act4.ai"
+    },
+    "episodes": [
+      {
+        "title": "Machine Learning, Open Source e Startups: A Jornada de André Natal",
+        "guest": "André Natal",
+        "guestRole": "ML Engineer, 20+ years (Mozilla, Silicon Valley)",
+        "date": "2025-02",
+        "duration": "1h 31m",
+        "description": "Career journey from Brazil to Silicon Valley, AI, NLP, open source, and market impact",
+        "url": "https://open.spotify.com/episode/1Vu16zQSIa8spGXZbkC7Yg"
+      },
+      {
+        "title": "Superando Limites com IA: A Jornada de Alexandre na Microsoft",
+        "guest": "Alexandre",
+        "guestRole": "Solutions Architect, Microsoft",
+        "date": "2024-11",
+        "duration": "1h 21m",
+        "description": "GitHub Copilot, accessibility, how AI transformed his personal and professional life",
+        "url": "https://open.spotify.com/episode/0qUFublIXtZu67IIopnLxr"
+      },
+      {
+        "title": "Desvendando a caixa-preta da Inteligência Artificial",
+        "guest": "Erick Maziero",
+        "guestRole": "PhD, ML Engineer specializing in NLP",
+        "date": "2024-08",
+        "duration": "1h 28m",
+        "description": "Large language models, ChatGPT, generative AI, and AI hallucinations",
+        "url": "https://open.spotify.com/episode/4zTU1GDrRggDq9dBjFKxDn"
+      }
+    ]
+  }
 }
