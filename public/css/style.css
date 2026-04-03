@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 :root {
     --primary-color: #00ff41;
     --primary-glow: #00ff41;
@@ -75,6 +79,7 @@ h1, h2, h3, h4,
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    overflow-x: hidden;
 }
 
 /* Navigation */
@@ -502,7 +507,7 @@ h2::after {
 
 .ai-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 1.5rem;
 }
 
@@ -557,7 +562,7 @@ h2::after {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -609,7 +614,7 @@ h2::after {
 
 .speaking-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 1.5rem;
 }
 
@@ -685,6 +690,7 @@ h2::after {
     display: flex;
     gap: 0.8rem;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .podcast-episodes {
@@ -1254,6 +1260,7 @@ h2::after {
     grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    overflow: hidden;
 }
 
 .project-card {
@@ -1264,6 +1271,9 @@ h2::after {
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
     position: relative;
+    overflow: hidden;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .project-card::before {
@@ -1318,6 +1328,8 @@ h2::after {
     flex-wrap: wrap;
     gap: 0.4rem;
     margin-bottom: 1rem;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .tag {
@@ -1354,6 +1366,7 @@ h2::after {
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
 /* Publications Page */
@@ -1795,6 +1808,15 @@ footer {
         display: flex;
     }
 
+    h2 {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+    }
+
+    .page-header h1 {
+        letter-spacing: 2px;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1972,6 +1994,29 @@ footer {
         padding: 10px 20px;
         font-size: 0.8rem;
         letter-spacing: 1px;
+    }
+
+    .hero-greeting {
+        letter-spacing: 2px;
+    }
+
+    .experience-item,
+    .project-card,
+    .publication-card,
+    .speaking-item,
+    .mentorship-card,
+    .ai-category-card,
+    .skill-category {
+        padding: 1.2rem;
+    }
+
+    .tech-tags {
+        gap: 0.3rem;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.4rem;
     }
 
     .footer-nav {

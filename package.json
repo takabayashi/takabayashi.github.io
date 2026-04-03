@@ -12,6 +12,7 @@
     "build:preview": "bun run build.ts && cd dist && bunx serve"
   },
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
     "@types/bun": "latest"
   },
   "peerDependencies": {
