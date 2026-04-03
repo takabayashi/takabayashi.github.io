@@ -1,0 +1,805 @@
+{
+  "name": "Daniel Takabayashi",
+  "nickname": "Taka",
+  "title": "Solutions Engineer / AI Architect",
+  "tagline": "Architecting Enterprise AI & Streaming Solutions at Scale",
+  "about": "Solutions Engineer and AI Architect with 20+ years of hands-on experience spanning software development, data science, machine learning, and engineering leadership. Currently architecting end-to-end streaming solutions for 50+ enterprise customers at Confluent, where I serve as the AI Subject Matter Expert driving multi-agent systems, MCP integrations, and Flink-based AI architectures. Former Director of Engineering at Overjet (Series C dental AI), Co-founder of Boolabs (acquired by B2W Digital in 2016), and creator of Marvin AI — the first Brazilian open-source project incubated by the Apache Foundation, which received 'The Innovation Value Award' from PwC in 2018. Founder of the Data+AI Monthly Internal Meetup at Confluent, international conference speaker, published researcher in computer vision and NLP, and a Brazilian Jiu-Jitsu practitioner who applies discipline, resilience, and calm problem-solving to technical leadership.",
+  "email": "daniel@act4.ai",
+  "phone": "",
+  "location": "Austin, TX",
+  "website": "https://takabayashi.github.io/",
+  "social": {
+    "linkedin": "danieltakabayashi",
+    "github": "takabayashi",
+    "twitter": "DanTakabayashi"
+  },
+  "spokenLanguages": {
+    "English": "Native/Bilingual",
+    "Portuguese": "Native/Bilingual",
+    "Spanish": "Professional Working",
+    "Japanese": "Elementary"
+  },
+  "hobbies": [
+    {
+      "name": "Brazilian Jiu-Jitsu",
+      "description": "Discipline that improves problem-solving skills, resilience, and ability to stay calm under pressure, complementing leadership capabilities"
+    },
+    {
+      "name": "Open-Source Advocacy",
+      "description": "Active contributor and evangelist for open-source projects, community education, and knowledge sharing"
+    },
+    {
+      "name": "Community Education",
+      "description": "Regular presenter at meetups and conferences, fostering technical communities in AI, streaming, and software architecture"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Confluent",
+      "companyDescription": "The Leading Data Streaming Platform",
+      "position": "Staff Solutions Engineer (AI SME)",
+      "location": "Austin, TX",
+      "startDate": "2024-05",
+      "endDate": null,
+      "current": true,
+      "description": "Architecting enterprise streaming solutions and leading AI/ML initiatives for major customers across AWS, GCP, and Azure. Serving as the AI Subject Matter Expert driving multi-agent systems, MCP integrations, and Flink-based AI architectures.",
+      "achievements": [
+        "Architected end-to-end streaming solutions for 50+ enterprise customers, reducing ingestion latency and costs",
+        "Supported deals totaling over $15M+ in the past year as SE and AI SME",
+        "Led AI/ML proof-of-concepts including anomaly detection, agentic workflows, MCP Servers, and A2A integrations",
+        "Founded and host the Data+AI Monthly Internal Meetup — a recurring series fostering cross-functional knowledge sharing on GenAI, multi-agent frameworks, and streaming AI architectures",
+        "Created and presented 'Every AI Opportunity is a DSP Opportunity' — a comprehensive internal/external deck on event-driven AI architecture patterns including RAG, MAS, and Flink Agents",
+        "Authored technical content on 'CrewAI Crews as Apache Flink Jobs' and 'Flink Multi-Agent System Design', mapping multi-agent concepts to event-driven architectures",
+        "Led technical architecture and PoC validation for high-profile LATAM accounts (Blip, iFood, Pipefy, Stix, Michelin, Superlogica) involving RAG, Flink ML inference, and platform modernization",
+        "Collaborated with product and engineering to translate customer feedback into roadmap improvements, contributing to Confluent MCP, Flink Agents (FLIP-531), Streaming Agents, and Lightning Tables",
+        "Delivered workshops and onboarding for engineering, data science, and DevOps teams on streaming design, partitioning, security (RBAC), and performance tuning",
+        "Proactively secured early access to experimental GenAI features (vector search, model inference) for strategic LATAM customers, providing technical validation feedback to engineering"
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Overjet.ai",
+      "companyDescription": "Series C Startup, Dental AI",
+      "position": "Director of Engineering",
+      "location": "Boston, MA",
+      "startDate": "2022-01",
+      "endDate": "2024-04",
+      "current": false,
+      "description": "Led multiple engineering teams (15+ people) with strategic collaboration at director and senior leadership levels. Drove massive performance and cost optimizations across AI inference pipelines.",
+      "achievements": [
+        "Managed multiple engineering teams (15+ people) with direct and indirect reports; mentoring, performance reviews, and strategic collaboration with peers at director level and senior leadership",
+        "Improved RTA latency of AI inference pipeline by ~20x, enhancing user engagement on the online platform",
+        "Drastically reduced unit costs (~6x) by rewriting ML components and optimizing K8s Clusters (GKE) utilization",
+        "Reduced new customer onboarding time from weeks to hours by redesigning core insurance product component",
+        "Enhanced reliability and implemented full observability (SRE), resulting in 90% reduction in incidents",
+        "Implemented release process, full CI/CD automation, and observability strategy enabling 4 MLOps engineers to manage hundreds of production services processing millions of images daily",
+        "Conceptualized, designed, and built MVP for innovative fraud detection platform (first of its kind) within one quarter, unlocking go-to-market strategies and revenue opportunities"
+      ]
+    },
+    {
+      "id": 3,
+      "company": "PwC Labs",
+      "companyDescription": "PricewaterhouseCoopers Innovation Labs",
+      "position": "Software Engineering Manager",
+      "location": "San Francisco, CA",
+      "startDate": "2021-03",
+      "endDate": "2022-01",
+      "current": false,
+      "description": "Managed globally distributed team designing and building Data & ML pipeline blueprints for PwC Labs legal domain projects.",
+      "achievements": [
+        "Managed team of 5 engineers distributed across Argentina, India, and USA",
+        "Designed and built blueprint for Data & ML pipelines used by PwC Labs projects in the legal domain",
+        "Reduced time/complexity for ML Scientists to prototype OCR-based solutions by creating Python SDK encapsulating ABBYY FineReader Engine SDK API (available only in C++)"
+      ]
+    },
+    {
+      "id": 4,
+      "company": "Dr. Opinion",
+      "companyDescription": "Seed Startup, Dental AI",
+      "position": "Principal Engineer | Co-Founder",
+      "location": "San Francisco, CA",
+      "startDate": "2018-09",
+      "endDate": "2021-03",
+      "current": false,
+      "description": "Zero-to-one development of scalable fraud detection platform for the dental insurance industry, processing terabytes of dental images using AI.",
+      "achievements": [
+        "Hired, managed, and grew globally distributed team of over 12 highly skilled engineers (USA, Brazil, Philippines)",
+        "Utilized AI and data processing to process terabytes of dental images, identifying ~0.5% fraud in first release",
+        "Enabled dental payers to take corrective and educational actions through AI-powered fraud detection",
+        "Built scalable platform from concept to production deployment"
+      ]
+    },
+    {
+      "id": 5,
+      "company": "B2W Digital",
+      "companyDescription": "Leading E-Commerce in LATAM",
+      "position": "Software Engineering Manager",
+      "location": "Sao Paulo, Brazil",
+      "startDate": "2016-04",
+      "endDate": "2018-09",
+      "current": false,
+      "description": "Led engineering team building search engine and marketplace product matching solutions. Created Marvin AI, the first Brazilian open-source project incubated by Apache Foundation.",
+      "achievements": [
+        "Managed team of 10+ engineers and data scientists creating components to improve search engine and product matching for marketplace",
+        "Created Marvin AI — first Brazilian open-source project incubated by Apache Foundation",
+        "Received 'The Innovation Value Award' from PwC as most innovative project in 'Retail' category (2018)",
+        "Delivered public presentations as speaker at international conferences on ML and Software Architecture (Apache conferences, QCon, PAPIs, SEI Saturn)",
+        "Engaged with and fostered open-source community and users worldwide"
+      ]
+    },
+    {
+      "id": 6,
+      "company": "Boolabs",
+      "companyDescription": "Acquired by B2W Digital (2016)",
+      "position": "Principal Engineer | Co-Founder",
+      "location": "Sao Paulo, Brazil",
+      "startDate": "2013-10",
+      "endDate": "2016-04",
+      "current": false,
+      "description": "Zero-to-one development and successful exit of AI-powered e-commerce startup. Built 3 products using ML and data processing technologies, leading to acquisition by B2W Digital.",
+      "achievements": [
+        "Hired, managed, and mentored team of 20+ highly skilled Software Engineers, DevOps, and ML Engineers",
+        "Created and managed research partnership with Brazilian academic institution, resulting in published papers in computer vision and NLP",
+        "Developed 3 products (B2B and B2C) using ML and data processing technologies as building blocks",
+        "Built scalable, low-latency API for white-labeled image-based product search",
+        "Successfully acquired by B2W Digital (2016)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "FIA (Fundacao Instituto de Administracao)",
+      "degree": "MBA",
+      "field": "Marketing Intelligence",
+      "location": "Brazil",
+      "startDate": "2016-01",
+      "endDate": "2018-12",
+      "credits": "~27 credits",
+      "gpa": "",
+      "achievements": [
+        "Advanced marketing analytics and business intelligence",
+        "Data-driven decision making and strategy"
+      ]
+    },
+    {
+      "id": 2,
+      "institution": "IPT (Instituto de Pesquisas Tecnologicas)",
+      "degree": "M.S.",
+      "field": "Software Engineering",
+      "location": "Brazil",
+      "startDate": "2010-01",
+      "endDate": "2013-12",
+      "gpa": "",
+      "achievements": [
+        "Research in software architecture and distributed systems",
+        "Focus on scalable enterprise software design",
+        "Thesis work on AI-driven architectural decision support (Julia Architect)"
+      ]
+    },
+    {
+      "id": 3,
+      "institution": "USCS (Universidade Municipal de Sao Caetano do Sul)",
+      "degree": "B.S.",
+      "field": "Computer Science",
+      "location": "Brazil",
+      "startDate": "2001-01",
+      "endDate": "2005-12",
+      "gpa": "",
+      "achievements": [
+        "Strong foundation in computer science fundamentals",
+        "Algorithms, data structures, and software engineering"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Java",
+      "C",
+      "C++",
+      "SQL",
+      "Ruby",
+      "Scala"
+    ],
+    "platforms": [
+      "NodeJS",
+      "MARN",
+      "Rails",
+      "Django",
+      "Flask",
+      "Play Framework"
+    ],
+    "architectures": [
+      "Google Cloud Platform (GCP)",
+      "Amazon Web Services (AWS)",
+      "Microsoft Azure",
+      "Distributed Systems",
+      "Data Pipelines",
+      "Event-Driven Architecture",
+      "Big Data",
+      "ML Pipelines",
+      "Streaming",
+      "Akka Actors",
+      "REST API",
+      "WebSocket",
+      "gRPC",
+      "Microservices"
+    ],
+    "infrastructure": [
+      "Kubernetes",
+      "CI/CD",
+      "Terraform",
+      "New Relic",
+      "Docker",
+      "GPU Computing"
+    ],
+    "mlops": [
+      "Databricks MLFlow",
+      "Kubeflow",
+      "Ray Serve",
+      "LangChain",
+      "LLM",
+      "PyTorch",
+      "TensorFlow",
+      "Caffe"
+    ],
+    "data": [
+      "Apache Kafka",
+      "Apache Flink",
+      "Apache Spark",
+      "DataFlow",
+      "Pub/Sub",
+      "DynamoDB",
+      "MongoDB",
+      "VectorDB",
+      "Cassandra",
+      "PostgreSQL",
+      "S3",
+      "GCS",
+      "Elasticsearch",
+      "Redis",
+      "Looker",
+      "BigQuery",
+      "HBase",
+      "Celery"
+    ],
+    "ai": [
+      "Traditional ML",
+      "Deep Learning",
+      "Computer Vision",
+      "NLP",
+      "GenAI",
+      "CrewAI",
+      "LangChain",
+      "AutoGen",
+      "RAG",
+      "Multi-Agent Systems (MAS)",
+      "MCP (Model Context Protocol)",
+      "A2A",
+      "Agentic Workflows",
+      "Anomaly Detection",
+      "Sentiment Analysis",
+      "Image Recognition"
+    ],
+    "leadership": [
+      "Agile Leader",
+      "Sprint Planning",
+      "Mentoring",
+      "Feedback",
+      "System Design",
+      "Technical Strategy",
+      "Team Building",
+      "Cross-functional Collaboration",
+      "Startup Leadership"
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Apache Marvin AI Platform",
+      "company": "B2W Digital / Apache Foundation",
+      "description": "First Brazilian open-source project incubated by Apache Foundation. An MLOps platform empowering data science teams to deliver complex solutions supported by a high-scale, low-latency, language-agnostic and standardized architecture. Simplifies exploration and modeling processes for rapid ML deployment.",
+      "technologies": [
+        "Python",
+        "Scala",
+        "Docker",
+        "Kubernetes",
+        "TensorFlow",
+        "Jupyter",
+        "Spark"
+      ],
+      "githubUrl": "https://github.com/apache/incubator-marvin",
+      "liveUrl": "",
+      "highlights": [
+        "Apache Foundation incubator project — first Brazilian project accepted",
+        "PwC Innovation Value Award winner (2018) — Retail category",
+        "Speaker at Apache conferences, QCon, PAPIs, SEI Saturn",
+        "99 GitHub stars, 33 forks, 585 commits",
+        "Published paper: 'Marvin — From Exploratory Models to Production' (PAPIs 2017)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Enterprise AI Streaming Architectures",
+      "company": "Confluent",
+      "description": "End-to-end streaming architectures for 50+ enterprise customers with AI/ML integrations. Designed architecture patterns for ML pipelines, RAG, Multi-Agent Systems, and agentic workflows on Confluent's DSP stack. Led technical PoCs for high-profile LATAM accounts.",
+      "technologies": [
+        "Kafka",
+        "Flink",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Python",
+        "MAS",
+        "MCP",
+        "A2A",
+        "RAG"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "highlights": [
+        "Architected solutions for 50+ enterprise customers, supporting $15M+ in deals",
+        "Led AI/ML PoCs: anomaly detection, agentic workflows, MCP, A2A integrations",
+        "Authored 'CrewAI Crews as Apache Flink Jobs' and 'Flink Multi-Agent System Design'",
+        "Contributed to Confluent MCP, Flink Agents (FLIP-531), Streaming Agents, Lightning Tables",
+        "Technical architect for Blip, iFood, Pipefy, Stix, Michelin, Superlogica"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dental Fraud Detection Platform",
+      "company": "Dr. Opinion & Overjet",
+      "description": "First-of-its-kind fraud detection platform for dental insurance industry, processing terabytes of dental images using AI to identify fraud patterns. Built from zero-to-one across two companies.",
+      "technologies": [
+        "Python",
+        "Computer Vision",
+        "Deep Learning",
+        "Kubernetes",
+        "GKE",
+        "Big Data"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "highlights": [
+        "Zero-to-one MVP built in one quarter at Overjet",
+        "Identified ~0.5% fraud rate in first release at Dr. Opinion",
+        "Processed millions of images daily",
+        "20x improvement in RTA latency, 6x cost reduction",
+        "Enabled corrective and educational actions for dental payers"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Scanboo",
+      "company": "Boolabs",
+      "description": "First SaaS platform in Latin America for e-commerce data collection and product classification. A crawler platform for structuring and matching products at scale, handling price monitoring and product deduplication across major e-commerce platforms.",
+      "technologies": [
+        "Python",
+        "C",
+        "Java",
+        "Rails",
+        "Ruby",
+        "NLP",
+        "Computer Vision",
+        "Cassandra",
+        "PostgreSQL",
+        "Django",
+        "Celery",
+        "S3",
+        "Elasticsearch",
+        "SVM"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "highlights": [
+        "First SaaS platform of its kind in Latin America",
+        "Team of ~20 people, built in 6 months",
+        "Spawned two derivative products: Boomage and Booska",
+        "Price monitoring and product deduplication at massive scale",
+        "Combined NLP and computer vision for product structuring"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Boomage",
+      "company": "Boolabs",
+      "description": "Deep learning system for visual product recognition using computer vision. A scalable, low-latency API for white-labeled image-based product search across e-commerce platforms, handling millions of classified images with sub-5-second response times.",
+      "technologies": [
+        "Spark",
+        "Caffe",
+        "Python",
+        "AWS",
+        "GPU",
+        "C",
+        "OpenMPI",
+        "OpenCV",
+        "OpenCL",
+        "HBase",
+        "Cassandra"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "highlights": [
+        "First stable version delivered in under 4 months",
+        "ML at scale: millions of classified images with 5-second response requirement",
+        "Distributed KNN for visual similarity search",
+        "GPU-accelerated deep learning pipeline",
+        "White-labeled API for e-commerce integration"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Booska",
+      "company": "Boolabs",
+      "description": "Web product search and price comparison platform. Architected as a web scraping system that independently compares competitor prices across multiple e-commerce sites, structuring large-scale web-derived data.",
+      "technologies": [
+        "NLP",
+        "Computer Vision",
+        "Play Framework",
+        "Cassandra",
+        "Python",
+        "JavaScript",
+        "Java",
+        "Elasticsearch"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "highlights": [
+        "Automated price comparison across multiple e-commerce seekers",
+        "Web scraping at scale with NLP-based data structuring",
+        "Real-time competitor price monitoring",
+        "Beta version deployed and validated"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Julia Architect",
+      "company": "Academic Research (M.S. Thesis)",
+      "description": "AI-driven system that assists software architects using case-based reasoning and architectural tactics. Suggests solutions based on non-functional requirements analysis, reusing proven architectural patterns.",
+      "technologies": [
+        "Java",
+        "Case-Based Reasoning",
+        "AI",
+        "Software Architecture"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "highlights": [
+        "AI-powered architectural decision support",
+        "Case-based reasoning for solution reuse",
+        "Quality attribute analysis and non-functional requirements mapping",
+        "Part of M.S. thesis research at IPT"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Oikos Hub Platform",
+      "company": "Personal Project",
+      "description": "DRM-protected digital book distribution ecosystem supporting EPUB and PDF formats. An economical alternative to Apple and Adobe solutions for small publishers, with apps across iOS, Android, and web.",
+      "technologies": [
+        "Liferay",
+        "iOS",
+        "Android",
+        "PhoneGap",
+        "Java",
+        "JavaScript",
+        "Objective-C",
+        "AWS",
+        "DRM",
+        "Encryption"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "highlights": [
+        "Beta launched in 6 months with minimal team",
+        "Cost-effective alternative to Apple/Adobe DRM solutions",
+        "Full ecosystem: server, iOS app, Android app, web reader",
+        "Custom encryption and DRM implementation"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "PwC Labs ML Blueprint",
+      "company": "PwC Labs",
+      "description": "Data & ML pipeline blueprint for legal domain projects with Python SDK encapsulating ABBYY FineReader Engine for OCR solutions, making C++ capabilities accessible to ML scientists.",
+      "technologies": [
+        "Python",
+        "C++",
+        "OCR",
+        "ABBYY FineReader",
+        "ML Pipelines"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "highlights": [
+        "Reduced ML scientist prototyping time/complexity significantly",
+        "Python SDK wrapper for C++ ABBYY FineReader Engine",
+        "Used across PwC Labs legal domain projects",
+        "Managed globally distributed team (Argentina, India, USA)"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Trello MCP Server Demo",
+      "company": "Personal/Community",
+      "description": "MCP Server implementation for Trello board management, demonstrating how Model Context Protocol can be used for agentic tool integration. Featured at Austin Python community meetup.",
+      "technologies": [
+        "Python",
+        "MCP",
+        "Trello API"
+      ],
+      "githubUrl": "https://github.com/takabayashi/trello-mcp-server-demo",
+      "liveUrl": "",
+      "highlights": [
+        "Featured at Austin Python meetup",
+        "Demonstrates MCP server architecture and agentic patterns",
+        "Community education contribution on emerging AI protocols"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "title": "Marvin — From Exploratory Models to Production",
+      "venue": "PAPIs.io (Predictive APIs and Apps)",
+      "date": "2017-10",
+      "authors": "Daniel Takabayashi et al.",
+      "description": "Presents Marvin AI platform's approach to abstracting complexities in developing scalable, maintainable ML applications. Covers the journey from exploratory data science models to production-ready systems.",
+      "url": "https://raw.githubusercontent.com/marvin-ai/marvin-paper/master/from-exploratory-models-to-productions/marvin_paper.pdf",
+      "type": "Conference Paper"
+    },
+    {
+      "id": 2,
+      "title": "BooViews: Aspect-based Sentiment Analysis on Product Reviews",
+      "venue": "PROPOR (International Conference on Computational Processing of Portuguese)",
+      "date": "2016-07",
+      "authors": "Guilherme Nobre, Daniel Takabayashi et al.",
+      "description": "Combines SVM and CRF techniques for aspect-based sentiment analysis in Portuguese product reviews. Achieved 91.7% precision in sentiment classification, 74.2% F1-score in aspect extraction, and 79.9% precision in aspect polarity detection.",
+      "url": "http://propor2016.di.fc.ul.pt/wp-content/uploads/2016/07/GuilhermeNobrePROPORSRW2016.pdf",
+      "type": "Conference Paper"
+    },
+    {
+      "id": 3,
+      "title": "Preprocessing Images to Improve Deep Neural Networks Classification",
+      "venue": "XI Workshop de Visao Computacional (WVC)",
+      "date": "2015-10",
+      "authors": "Daniel Takabayashi et al.",
+      "description": "Research on image augmentation and CNN optimization techniques for e-commerce product classification. Explores preprocessing methods that improve deep neural network accuracy for visual recognition tasks.",
+      "url": "",
+      "type": "Workshop Paper"
+    }
+  ],
+  "speaking": [
+    {
+      "event": "TDC — The Developer's Conference Brazil",
+      "topic": "The Future of AI is Event-Driven: Building Reactive and Scalable Multi-Agent Systems",
+      "year": "2025",
+      "description": "Keynote on event-driven AI architectures, multi-agent systems on Apache Flink, and the convergence of streaming data with GenAI"
+    },
+    {
+      "event": "Austin Python Meetup",
+      "topic": "MCP 101 — Model Context Protocol for Agentic AI",
+      "year": "2025",
+      "description": "Hands-on demo of MCP server implementation with Trello integration, evangelizing event-driven agent patterns to the Python community"
+    },
+    {
+      "event": "Confluent Internal Enablement — AI in Action",
+      "topic": "AI in Action: From Rules-Based to Reasoning-Based AI",
+      "year": "2025",
+      "description": "Internal enablement session covering the evolution of AI, real-world applications, and implications for Solutions Engineering"
+    },
+    {
+      "event": "Apache Conferences",
+      "topic": "Marvin AI — Apache Incubator Project",
+      "year": "2017-2018",
+      "description": "Presented on the Marvin AI platform architecture, open-source ML tooling, and lessons from Apache Foundation incubation"
+    },
+    {
+      "event": "QCon",
+      "topic": "Machine Learning Platforms at Scale",
+      "year": "2017-2018",
+      "description": "International presentation on scalable ML platform architecture and production-grade ML systems"
+    },
+    {
+      "event": "PAPIs (Predictive APIs)",
+      "topic": "From Exploratory Models to Production",
+      "year": "2017",
+      "description": "Paper presentation on Marvin AI platform and deploying ML models at scale in production environments"
+    },
+    {
+      "event": "SEI Saturn Conference",
+      "topic": "Software Architecture for ML Systems",
+      "year": "2017-2018",
+      "description": "Presented on architectural patterns for machine learning systems, quality attributes, and scalable ML infrastructure"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Data Streaming Engineer - Apache Flink",
+      "issuer": "Confluent",
+      "date": "2028-01",
+      "category": "Data Streaming"
+    },
+    {
+      "name": "Data Streaming Engineer Foundations",
+      "issuer": "Confluent",
+      "date": "2025-05",
+      "category": "Data Streaming"
+    },
+    {
+      "name": "Confluent Certified Developer for Apache Kafka",
+      "issuer": "Confluent",
+      "date": "2024-12",
+      "category": "Data Streaming"
+    },
+    {
+      "name": "Confluent Cloud Certified Operator",
+      "issuer": "Confluent",
+      "date": "2024-10",
+      "category": "Data Streaming"
+    },
+    {
+      "name": "Java EE 5 Enterprise Architect Certified Master (Part 1)",
+      "issuer": "Oracle",
+      "date": "2013-07",
+      "category": "Enterprise Architecture"
+    },
+    {
+      "name": "Certified System Administrator — WebSphere Application Server Network Deployment V8.0",
+      "issuer": "IBM",
+      "date": "2013-03",
+      "category": "System Administration"
+    },
+    {
+      "name": "Certified Administrator for SOA Solutions — WebSphere Process Server V7.0",
+      "issuer": "IBM",
+      "date": "2012-03",
+      "category": "SOA"
+    },
+    {
+      "name": "Certified Deployment Professional — WebSphere Process Server V7.0",
+      "issuer": "IBM",
+      "date": "2012-03",
+      "category": "Deployment BPM"
+    },
+    {
+      "name": "Certified SOA Solution Designer",
+      "issuer": "IBM",
+      "date": "2012-02",
+      "category": "SOA"
+    },
+    {
+      "name": "Certified System Administrator — Connections 3.0",
+      "issuer": "IBM",
+      "date": "2011-06",
+      "category": "System Administration"
+    },
+    {
+      "name": "Certified System Administrator — WebSphere Application Server Network Deployment V7.0",
+      "issuer": "IBM",
+      "date": "2011-06",
+      "category": "System Administration"
+    },
+    {
+      "name": "Certified Application Developer — Rational Application Developer v7",
+      "issuer": "IBM",
+      "date": "2010-01",
+      "category": "Application Development"
+    },
+    {
+      "name": "Certified SOA Associate",
+      "issuer": "IBM",
+      "date": "2010-01",
+      "category": "SOA"
+    },
+    {
+      "name": "Certified Associate Developer — WebSphere Studio V5.0",
+      "issuer": "IBM",
+      "date": "2006-11",
+      "category": "Application Development"
+    },
+    {
+      "name": "SCWCD — Sun Certified Web Component Developer (Java 2 EE 1.4)",
+      "issuer": "Sun Microsystems",
+      "date": "2006-05",
+      "category": "Java"
+    },
+    {
+      "name": "SCJA — Sun Certified Associate for Java 2 Platform SE 1.0",
+      "issuer": "Sun Microsystems",
+      "date": "2005-06",
+      "category": "Java"
+    },
+    {
+      "name": "SCJP — Sun Certified Programmer for Java 2 Platform 1.4",
+      "issuer": "Sun Microsystems",
+      "date": "2005-01",
+      "category": "Java"
+    }
+  ],
+  "aiContributions": {
+    "title": "AI Leadership at Confluent",
+    "description": "Central catalyst in advancing AI-driven initiatives within Confluent's DSP Solutions Engineering, spanning technical, architectural, and programmatic leadership across nearly all major AI and GenAI-related initiatives since mid-2024.",
+    "categories": [
+      {
+        "name": "Internal Programs",
+        "items": [
+          "Founded and lead the Data+AI Monthly Internal Meetup — deep dives into multi-agent frameworks, GenAI use cases, and technical how-tos",
+          "Created 'AI in Action' enablement series covering evolution from rules-based to reasoning-based AI",
+          "Active in GenAI AMA and Office Hours for SEs, AEs, CEs, and partners"
+        ]
+      },
+      {
+        "name": "Product & Feature Enablement",
+        "items": [
+          "Test user and internal advocate for Streaming Agents capability",
+          "Contributed to Flink Agents (FLIP-531), Streaming Agents for Confluent Cloud, MCP Server, Lightning Tables, and Symphony gateway",
+          "Provided structured feedback on gaps/limitations discovered in customer PoCs to PM and engineering leads"
+        ]
+      },
+      {
+        "name": "Customer-Facing AI Solutions",
+        "items": [
+          "Technical architect for AI-centric solutions across 8+ high-profile LATAM accounts",
+          "Designed RAG patterns, Flink ML model inference, streaming pipelines, and fraud detection architectures",
+          "Led rollout of MCP and GenAI demos for internal and external audiences"
+        ]
+      },
+      {
+        "name": "Thought Leadership",
+        "items": [
+          "Authored 'Every AI Opportunity is a DSP Opportunity' — comprehensive architecture patterns for event-driven AI",
+          "Created technical content on CrewAI-Flink integration and Multi-Agent System design",
+          "Scheduled talks for TDC Brazil, Python meetups, and customer AI accelerator programs"
+        ]
+      }
+    ]
+  },
+  "achievements": [
+    "Supported $15M+ in enterprise deals as Solutions Engineer and AI SME at Confluent",
+    "Co-founded Boolabs and successfully exited via acquisition by B2W Digital (2016)",
+    "Created Marvin AI — first Brazilian open-source project incubated by Apache Foundation",
+    "Received 'The Innovation Value Award' from PwC as most innovative project in Retail category (2018)",
+    "Improved AI inference pipeline latency by 20x and reduced ML costs by 6x at Overjet",
+    "Published 3 peer-reviewed papers in computer vision, NLP, and ML platforms",
+    "International speaker at 7+ major conferences including Apache, QCon, PAPIs, SEI Saturn, and TDC",
+    "Hold 13 professional certifications from Oracle, IBM, and Sun Microsystems",
+    "20+ years of hands-on software engineering, ML, and leadership experience",
+    "Built and led globally distributed teams across USA, Brazil, Argentina, India, and Philippines",
+    "Architected streaming solutions for 50+ enterprise customers across AWS, GCP, and Azure",
+    "Founded Data+AI Monthly Internal Meetup at Confluent, fostering cross-functional AI knowledge sharing"
+  ],
+  "awards": [
+    {
+      "title": "The Innovation Value Award",
+      "issuer": "PricewaterhouseCoopers (PwC)",
+      "year": "2018",
+      "category": "Retail",
+      "description": "Awarded to B2W Digital and Marvin AI project as the most innovative project in the retail sector"
+    }
+  ],
+  "mentorship": [
+    {
+      "organization": "Confluent AI Startup Accelerator",
+      "role": "Mentor",
+      "period": "2024-Present",
+      "description": "Provided in-depth mentorship to technical founders, guiding them on leveraging Confluent AI products, developing scalable event-driven AI architectures, and implementing best practices for real-world streaming AI solutions."
+    },
+    {
+      "organization": "Founder Institute",
+      "role": "Mentor",
+      "period": "2019-2021",
+      "description": "Mentored early-stage startup founders on technical strategy, product development, and engineering team building"
+    },
+    {
+      "organization": "Cotidiano Startup Accelerator",
+      "role": "Mentor",
+      "period": "2018-2022",
+      "description": "Guided startup teams on technology choices, scalable architecture, and AI/ML product development"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "bio_site",
+  "version": "1.0.0",
+  "description": "Dynamic bio/resume website for Daniel Takabayashi",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --hot index.ts",
+    "start": "bun index.ts",
+    "build": "bun run build.ts",
+    "build:preview": "bun run build.ts && cd dist && bunx serve"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
