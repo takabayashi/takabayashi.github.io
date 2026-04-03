@@ -31,7 +31,7 @@ jobs:
 
       - run: bun run build
         env:
-          BASE_PATH: "/bio_site"
+          BASE_PATH: ""
 
       - uses: actions/configure-pages@v5
 
