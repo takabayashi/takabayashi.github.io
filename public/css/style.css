@@ -35,6 +35,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     color: var(--text-primary);
     background-color: var(--dark-bg);
+    overflow-x: hidden;
+    overflow-wrap: break-word;
     background-image:
         repeating-linear-gradient(
             0deg,
@@ -467,7 +469,7 @@ h2::after {
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: 1rem;
 }
 
@@ -788,7 +790,7 @@ h2::after {
 
 .mentorship-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: 1.5rem;
 }
 
@@ -1106,7 +1108,7 @@ h2::after {
 
 .hobbies-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 1rem;
 }
 
@@ -1178,7 +1180,7 @@ h2::after {
 .certifications-grid,
 .certs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 1.5rem;
 }
 
@@ -1249,7 +1251,7 @@ h2::after {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -1493,7 +1495,7 @@ h2::after {
 /* Contact Page */
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 3rem;
     margin-top: 2rem;
 }
@@ -1856,6 +1858,12 @@ footer {
         align-items: center;
     }
 
+    .footer-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
     .pub-meta {
         flex-direction: column;
         gap: 0.3rem;
@@ -1872,12 +1880,34 @@ footer {
     }
 
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
+    .hero-title {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-meta {
+        font-size: 0.85rem;
+    }
+
+    .hero-separator {
+        margin: 0 0.4rem;
     }
 
     .hero-stats {
         grid-template-columns: 1fr 1fr;
         gap: 0.8rem;
+    }
+
+    .stat-item {
+        padding: 1rem;
     }
 
     .stat-number {
@@ -1889,16 +1919,43 @@ footer {
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .experience-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.6rem;
         letter-spacing: 2px;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
+    .page-header {
+        padding: 60px 15px 40px;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
+    section {
+        padding: 50px 0;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    .footer-nav {
+        gap: 0.5rem;
+    }
+
+    .footer-nav a {
+        font-size: 0.75rem;
     }
 }
 
