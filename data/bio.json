@@ -37,6 +37,7 @@
     {
       "id": 1,
       "company": "Confluent",
+      "companyUrl": "https://www.confluent.io",
       "companyDescription": "The Leading Data Streaming Platform",
       "position": "Staff Solutions Engineer (AI SME)",
       "location": "Austin, TX",
@@ -60,6 +61,7 @@
     {
       "id": 2,
       "company": "Overjet.ai",
+      "companyUrl": "https://www.overjet.com",
       "companyDescription": "Series C Startup, Dental AI",
       "position": "Director of Engineering",
       "location": "Boston, MA",
@@ -80,6 +82,7 @@
     {
       "id": 3,
       "company": "PwC Labs",
+      "companyUrl": "https://www.pwc.com",
       "companyDescription": "PricewaterhouseCoopers Innovation Labs",
       "position": "Software Engineering Manager",
       "location": "San Francisco, CA",
@@ -96,6 +99,7 @@
     {
       "id": 4,
       "company": "Dr. Opinion",
+      "companyUrl": "https://www.crunchbase.com/organization/dr-opinion",
       "companyDescription": "Seed Startup, Dental AI",
       "position": "Principal Engineer | Co-Founder",
       "location": "San Francisco, CA",
@@ -112,6 +116,7 @@
     {
       "id": 5,
       "company": "B2W Digital",
+      "companyUrl": "https://www.americanas.com.br",
       "companyDescription": "Leading E-Commerce in LATAM",
       "position": "Software Engineering Manager",
       "location": "Sao Paulo, Brazil",
@@ -130,6 +135,7 @@
     {
       "id": 6,
       "company": "Boolabs",
+      "companyUrl": "https://www.americanas.com.br",
       "companyDescription": "Acquired by B2W Digital (2016) — LATAM's largest e-commerce platform",
       "position": "Principal Engineer | Co-Founder",
       "location": "Sao Paulo, Brazil",
@@ -150,6 +156,7 @@
     {
       "id": 1,
       "institution": "FIA (Fundacao Instituto de Administracao)",
+      "institutionUrl": "https://fia.com.br",
       "degree": "MBA",
       "field": "Marketing Intelligence",
       "location": "Brazil",
@@ -165,6 +172,7 @@
     {
       "id": 2,
       "institution": "IPT (Instituto de Pesquisas Tecnologicas)",
+      "institutionUrl": "https://www.ipt.br",
       "degree": "M.S.",
       "field": "Software Engineering",
       "location": "Brazil",
@@ -180,6 +188,7 @@
     {
       "id": 3,
       "institution": "USCS (Universidade Municipal de Sao Caetano do Sul)",
+      "institutionUrl": "https://www.uscs.edu.br",
       "degree": "B.S.",
       "field": "Computer Science",
       "location": "Brazil",
@@ -573,42 +582,49 @@
   "speaking": [
     {
       "event": "TDC — The Developer's Conference Brazil",
+      "eventUrl": "https://thedevconf.com",
       "topic": "The Future of AI is Event-Driven: Building Reactive and Scalable Multi-Agent Systems",
       "year": "2025",
       "description": "Keynote on event-driven AI architectures, multi-agent systems on Apache Flink, and the convergence of streaming data with GenAI"
     },
     {
       "event": "Austin Python Meetup",
+      "eventUrl": "https://www.meetup.com/austinpython/",
       "topic": "MCP 101 — Model Context Protocol for Agentic AI",
       "year": "2025",
       "description": "Hands-on demo of MCP server implementation with Trello integration, evangelizing event-driven agent patterns to the Python community"
     },
     {
       "event": "Confluent Internal Enablement — AI in Action",
+      "eventUrl": "",
       "topic": "AI in Action: From Rules-Based to Reasoning-Based AI",
       "year": "2025",
       "description": "Internal enablement session covering the evolution of AI, real-world applications, and implications for Solutions Engineering"
     },
     {
       "event": "Apache Conferences",
+      "eventUrl": "https://www.apache.org",
       "topic": "Marvin AI — Apache Incubator Project",
       "year": "2017-2018",
       "description": "Presented on the Marvin AI platform architecture, open-source ML tooling, and lessons from Apache Foundation incubation"
     },
     {
       "event": "QCon",
+      "eventUrl": "https://qconferences.com",
       "topic": "Machine Learning Platforms at Scale",
       "year": "2017-2018",
       "description": "International presentation on scalable ML platform architecture and production-grade ML systems"
     },
     {
       "event": "PAPIs (Predictive APIs)",
+      "eventUrl": "https://www.papis.io",
       "topic": "From Exploratory Models to Production",
       "year": "2017",
       "description": "Paper presentation on Marvin AI platform and deploying ML models at scale in production environments"
     },
     {
       "event": "SEI Saturn Conference",
+      "eventUrl": "https://www.sei.cmu.edu",
       "topic": "Software Architecture for ML Systems",
       "year": "2017-2018",
       "description": "Presented on architectural patterns for machine learning systems, quality attributes, and scalable ML infrastructure"
@@ -782,18 +798,21 @@
   "mentorship": [
     {
       "organization": "Confluent AI Startup Accelerator",
+      "organizationUrl": "https://www.confluent.io",
       "role": "Mentor",
       "period": "2024-Present",
       "description": "Provided in-depth mentorship to technical founders, guiding them on leveraging Confluent AI products, developing scalable event-driven AI architectures, and implementing best practices for real-world streaming AI solutions."
     },
     {
       "organization": "Founder Institute",
+      "organizationUrl": "https://fi.co",
       "role": "Mentor",
       "period": "2019-2021",
       "description": "Mentored early-stage startup founders on technical strategy, product development, and engineering team building"
     },
     {
       "organization": "Cotidiano Startup Accelerator",
+      "organizationUrl": "",
       "role": "Mentor",
       "period": "2018-2022",
       "description": "Guided startup teams on technology choices, scalable architecture, and AI/ML product development"
@@ -817,7 +836,8 @@
         "guestRole": "ML Engineer, 20+ years (Mozilla, Silicon Valley)",
         "date": "2025-02",
         "duration": "1h 31m",
-        "description": "Career journey from Brazil to Silicon Valley, AI, NLP, open source, and market impact"
+        "description": "Career journey from Brazil to Silicon Valley, AI, NLP, open source, and market impact",
+        "url": "https://open.spotify.com/episode/1Vu16zQSIa8spGXZbkC7Yg"
       },
       {
         "title": "Superando Limites com IA: A Jornada de Alexandre na Microsoft",
@@ -825,7 +845,8 @@
         "guestRole": "Solutions Architect, Microsoft",
         "date": "2024-11",
         "duration": "1h 21m",
-        "description": "GitHub Copilot, accessibility, how AI transformed his personal and professional life"
+        "description": "GitHub Copilot, accessibility, how AI transformed his personal and professional life",
+        "url": "https://open.spotify.com/episode/0qUFublIXtZu67IIopnLxr"
       },
       {
         "title": "Desvendando a caixa-preta da Inteligência Artificial",
@@ -833,7 +854,8 @@
         "guestRole": "PhD, ML Engineer specializing in NLP",
         "date": "2024-08",
         "duration": "1h 28m",
-        "description": "Large language models, ChatGPT, generative AI, and AI hallucinations"
+        "description": "Large language models, ChatGPT, generative AI, and AI hallucinations",
+        "url": "https://open.spotify.com/episode/4zTU1GDrRggDq9dBjFKxDn"
       }
     ]
   }

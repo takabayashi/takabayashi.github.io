@@ -915,6 +915,19 @@ h2::after {
     font-size: 0.95rem;
 }
 
+.company-link,
+.institution-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.company-link:hover,
+.institution-link:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
 .experience-item .date {
     color: var(--accent-color);
     font-size: 0.9rem;

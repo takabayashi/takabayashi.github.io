@@ -222,7 +222,7 @@ export function homePage(basePath = '', useHtmlExt = false): string {
             <div class="mentorship-grid">
                 ${bioData.mentorship.map(m => `
                     <div class="mentorship-card">
-                        <h3>${m.organization}</h3>
+                        <h3>${m.organizationUrl ? `<a href="${m.organizationUrl}" target="_blank" class="institution-link">${m.organization}</a>` : m.organization}</h3>
                         <p class="mentorship-role">${m.role} (${m.period})</p>
                         <p>${m.description}</p>
                     </div>
@@ -251,7 +251,7 @@ export function experiencePage(basePath = '', useHtmlExt = false): string {
                         <div class="experience-header">
                             <div>
                                 <h3>${exp.position}</h3>
-                                <h4>${exp.company} <span class="company-desc">// ${exp.companyDescription}</span></h4>
+                                <h4>${exp.companyUrl ? `<a href="${exp.companyUrl}" target="_blank" class="company-link">${exp.company}</a>` : exp.company} <span class="company-desc">// ${exp.companyDescription}</span></h4>
                             </div>
                             <div class="experience-meta">
                                 <span class="date">${formatDate(exp.startDate)} - ${formatDate(exp.endDate)}</span>
@@ -271,7 +271,7 @@ export function experiencePage(basePath = '', useHtmlExt = false): string {
                 ${bioData.education.map(edu => `
                     <div class="education-item">
                         <h3>${edu.degree} in ${edu.field}${edu.credits ? ` (${edu.credits})` : ''}</h3>
-                        <h4>${edu.institution}${edu.location ? ' // ' + edu.location : ''}</h4>
+                        <h4>${edu.institutionUrl ? `<a href="${edu.institutionUrl}" target="_blank" class="company-link">${edu.institution}</a>` : edu.institution}${edu.location ? ' // ' + edu.location : ''}</h4>
                         <span class="date">${formatDate(edu.startDate)} - ${formatDate(edu.endDate)}</span>
                         ${edu.achievements && edu.achievements.length > 0 ? `
                             <ul>
@@ -325,7 +325,7 @@ export function experiencePage(basePath = '', useHtmlExt = false): string {
                 <div class="mentorship-grid">
                     ${bioData.mentorship.map(m => `
                         <div class="mentorship-card">
-                            <h4>${m.organization}</h4>
+                            <h4>${m.organizationUrl ? `<a href="${m.organizationUrl}" target="_blank" class="institution-link">${m.organization}</a>` : m.organization}</h4>
                             <p class="mentorship-role">${m.role} (${m.period})</p>
                             <p>${m.description}</p>
                         </div>
@@ -413,7 +413,7 @@ export function publicationsPage(basePath = '', useHtmlExt = false): string {
                         <div class="speaking-item">
                             <div class="speaking-header">
                                 <div>
-                                    <h3>${speak.event}</h3>
+                                    <h3>${speak.eventUrl ? `<a href="${speak.eventUrl}" target="_blank" class="institution-link">${speak.event}</a>` : speak.event}</h3>
                                     <p class="speaking-topic">"${speak.topic}"</p>
                                 </div>
                                 <span class="date">${speak.year}</span>
@@ -429,7 +429,7 @@ export function publicationsPage(basePath = '', useHtmlExt = false): string {
                 <div class="mentorship-grid">
                     ${bioData.mentorship.map(m => `
                         <div class="mentorship-card">
-                            <h3>${m.organization}</h3>
+                            <h3>${m.organizationUrl ? `<a href="${m.organizationUrl}" target="_blank" class="institution-link">${m.organization}</a>` : m.organization}</h3>
                             <p class="mentorship-role">${m.role} (${m.period})</p>
                             <p>${m.description}</p>
                         </div>
@@ -462,6 +462,7 @@ export function publicationsPage(basePath = '', useHtmlExt = false): string {
                                 </div>
                             </div>
                             <p>${ep.description}</p>
+                            ${ep.url ? `<a href="${ep.url}" target="_blank" class="btn btn-small">Listen on Spotify</a>` : ''}
                         </div>
                     `).join('')}
                 </div>
