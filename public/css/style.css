@@ -767,11 +767,23 @@ h2::after {
     }
 }
 
+/* Podcast Section (inside content-section) */
+.podcast-section {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-color);
+}
+
 /* Mentorship Grid */
-.mentorship-section,
-.mentorship-full-section {
+.mentorship-section {
     background: var(--dark-bg-secondary);
     border-top: 1px solid var(--border-glow);
+}
+
+.mentorship-full-section {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .mentorship-grid {
@@ -1336,7 +1348,8 @@ h2::after {
 
 .publications-section h2,
 .speaking-full-section h2,
-.mentorship-full-section h2 {
+.mentorship-full-section h2,
+.podcast-section h2 {
     text-align: left;
 }
 
@@ -1462,11 +1475,6 @@ h2::after {
 .speaking-item > p:last-child {
     color: var(--text-secondary);
     font-size: 0.9rem;
-}
-
-/* Mentorship (Publications page) */
-.mentorship-full-section {
-    margin-top: 3rem;
 }
 
 /* Contact Page */

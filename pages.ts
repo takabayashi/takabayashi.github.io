@@ -424,6 +424,19 @@ export function publicationsPage(basePath = '', useHtmlExt = false): string {
                 </div>
             </div>
 
+            <div class="mentorship-full-section">
+                <h2>Mentorship & Community</h2>
+                <div class="mentorship-grid">
+                    ${bioData.mentorship.map(m => `
+                        <div class="mentorship-card">
+                            <h3>${m.organization}</h3>
+                            <p class="mentorship-role">${m.role} (${m.period})</p>
+                            <p>${m.description}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
             <div class="podcast-section">
                 <h2>Podcast</h2>
                 <div class="podcast-intro">
@@ -449,19 +462,6 @@ export function publicationsPage(basePath = '', useHtmlExt = false): string {
                                 </div>
                             </div>
                             <p>${ep.description}</p>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-
-            <div class="mentorship-full-section">
-                <h2>Mentorship & Community</h2>
-                <div class="mentorship-grid">
-                    ${bioData.mentorship.map(m => `
-                        <div class="mentorship-card">
-                            <h3>${m.organization}</h3>
-                            <p class="mentorship-role">${m.role} (${m.period})</p>
-                            <p>${m.description}</p>
                         </div>
                     `).join('')}
                 </div>
