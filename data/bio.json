@@ -2,8 +2,8 @@
   "name": "Daniel Takabayashi",
   "nickname": "Taka",
   "title": "Solutions Engineer / AI Architect",
-  "tagline": "Architecting Enterprise AI & Streaming Solutions at Scale",
-  "about": "Solutions Engineer and AI Architect with 20+ years of hands-on experience spanning software development, data science, machine learning, and engineering leadership. Currently architecting end-to-end streaming solutions for 50+ enterprise customers at Confluent, where I serve as the AI Subject Matter Expert driving multi-agent systems, MCP integrations, and Flink-based AI architectures. Former Director of Engineering at Overjet (Series C dental AI), Co-founder of Boolabs (acquired by B2W Digital in 2016), and creator of Marvin AI — the first Brazilian open-source project incubated by the Apache Foundation, which received 'The Innovation Value Award' from PwC in 2018. Founder of the Data+AI Monthly Internal Meetup at Confluent, international conference speaker, published researcher in computer vision and NLP, and a Brazilian Jiu-Jitsu practitioner who applies discipline, resilience, and calm problem-solving to technical leadership.",
+  "tagline": "Event-Driven AI & Multi-Agent Systems for the Enterprise",
+  "about": "I build the bridge between cutting-edge AI and production-scale streaming systems. At Confluent, I architect AI-powered streaming pipelines for 50+ enterprise customers and serve as the AI Subject Matter Expert — driving multi-agent systems, MCP integrations, and Flink-based inference architectures that have supported over $15M in deals.\n\nBefore that, I co-founded two startups (Boolabs, acquired by B2W Digital in 2016, and Dr. Opinion), led engineering at Overjet where we cut AI inference latency by 20x, and created Marvin AI — the first Brazilian project incubated by the Apache Foundation, which won PwC's Innovation Value Award in 2018.\n\nI'm a published researcher, international conference speaker, BJJ practitioner, and someone who genuinely believes the best AI systems are event-driven.",
   "email": "daniel@act4.ai",
   "phone": "",
   "location": "Austin, TX",
@@ -45,7 +45,7 @@
       "current": true,
       "description": "Architecting enterprise streaming solutions and leading AI/ML initiatives for major customers across AWS, GCP, and Azure. Serving as the AI Subject Matter Expert driving multi-agent systems, MCP integrations, and Flink-based AI architectures.",
       "achievements": [
-        "Architected end-to-end streaming solutions for 50+ enterprise customers, reducing ingestion latency and costs",
+        "Architected end-to-end streaming solutions for 50+ enterprise customers across AWS, GCP, and Azure, driving measurable improvements in ingestion latency and infrastructure costs",
         "Supported deals totaling over $15M+ in the past year as SE and AI SME",
         "Led AI/ML proof-of-concepts including anomaly detection, agentic workflows, MCP Servers, and A2A integrations",
         "Founded and host the Data+AI Monthly Internal Meetup — a recurring series fostering cross-functional knowledge sharing on GenAI, multi-agent frameworks, and streaming AI architectures",
@@ -71,8 +71,8 @@
         "Managed multiple engineering teams (15+ people) with direct and indirect reports; mentoring, performance reviews, and strategic collaboration with peers at director level and senior leadership",
         "Improved RTA latency of AI inference pipeline by ~20x, enhancing user engagement on the online platform",
         "Drastically reduced unit costs (~6x) by rewriting ML components and optimizing K8s Clusters (GKE) utilization",
-        "Reduced new customer onboarding time from weeks to hours by redesigning core insurance product component",
-        "Enhanced reliability and implemented full observability (SRE), resulting in 90% reduction in incidents",
+        "Redesigned core insurance product component, cutting new customer onboarding from 6+ weeks to hours",
+        "Implemented full observability stack (SRE), reducing production incidents by 90% and achieving 99.9% platform uptime",
         "Implemented release process, full CI/CD automation, and observability strategy enabling 4 MLOps engineers to manage hundreds of production services processing millions of images daily",
         "Conceptualized, designed, and built MVP for innovative fraud detection platform (first of its kind) within one quarter, unlocking go-to-market strategies and revenue opportunities"
       ]
@@ -86,11 +86,11 @@
       "startDate": "2021-03",
       "endDate": "2022-01",
       "current": false,
-      "description": "Managed globally distributed team designing and building Data & ML pipeline blueprints for PwC Labs legal domain projects.",
+      "description": "Led globally distributed R&D team building reusable ML pipeline architectures for PwC's legal tech AI practice.",
       "achievements": [
-        "Managed team of 5 engineers distributed across Argentina, India, and USA",
-        "Designed and built blueprint for Data & ML pipelines used by PwC Labs projects in the legal domain",
-        "Reduced time/complexity for ML Scientists to prototype OCR-based solutions by creating Python SDK encapsulating ABBYY FineReader Engine SDK API (available only in C++)"
+        "Led team of 5 engineers across Argentina, India, and USA building reusable Data & ML pipeline blueprints for PwC Labs' legal domain projects",
+        "Created Python SDK wrapping ABBYY FineReader Engine (C++ only), enabling ML scientists to prototype OCR solutions at 5x faster speed",
+        "Architecture validated and adopted across 10+ legal domain projects before broader enterprise rollout"
       ]
     },
     {
@@ -105,9 +105,8 @@
       "description": "Zero-to-one development of scalable fraud detection platform for the dental insurance industry, processing terabytes of dental images using AI.",
       "achievements": [
         "Hired, managed, and grew globally distributed team of over 12 highly skilled engineers (USA, Brazil, Philippines)",
-        "Utilized AI and data processing to process terabytes of dental images, identifying ~0.5% fraud in first release",
-        "Enabled dental payers to take corrective and educational actions through AI-powered fraud detection",
-        "Built scalable platform from concept to production deployment"
+        "Built AI pipeline processing terabytes of dental images, identifying 0.5% fraud rate in first production release — enabling insurers to recover costs and take corrective action",
+        "Designed scalable platform architecture from zero to production serving dental payers across the US"
       ]
     },
     {
@@ -131,7 +130,7 @@
     {
       "id": 6,
       "company": "Boolabs",
-      "companyDescription": "Acquired by B2W Digital (2016)",
+      "companyDescription": "Acquired by B2W Digital (2016) — LATAM's largest e-commerce platform",
       "position": "Principal Engineer | Co-Founder",
       "location": "Sao Paulo, Brazil",
       "startDate": "2013-10",
@@ -207,11 +206,10 @@
     ],
     "platforms": [
       "NodeJS",
-      "MARN",
-      "Rails",
       "Django",
       "Flask",
-      "Play Framework"
+      "FastAPI",
+      "Bun"
     ],
     "architectures": [
       "Google Cloud Platform (GCP)",
@@ -223,7 +221,6 @@
       "Big Data",
       "ML Pipelines",
       "Streaming",
-      "Akka Actors",
       "REST API",
       "WebSocket",
       "gRPC",
@@ -318,7 +315,7 @@
         "Apache Foundation incubator project — first Brazilian project accepted",
         "PwC Innovation Value Award winner (2018) — Retail category",
         "Speaker at Apache conferences, QCon, PAPIs, SEI Saturn",
-        "99 GitHub stars, 33 forks, 585 commits",
+        "~364 combined GitHub stars across Marvin ecosystem, 33 forks, 585 commits",
         "Published paper: 'Marvin — From Exploratory Models to Production' (PAPIs 2017)"
       ]
     },
